@@ -21,6 +21,25 @@ rosbuild_genmsg()
 #uncomment if you have defined services
 rosbuild_gensrv()
 
+rosbuild_find_ros_package(nasa_cmake)
+list(APPEND CMAKE_MODULE_PATH ${nasa_cmake_PACKAGE_PATH})
+find_package(Log4cpp REQUIRED)
+include_directories(${Log4cpp_INCLUDE_DIR})
+find_package(ProtocolBuffers REQUIRED)
+include_directories(${ProtocolBuffers_INCLUDE_DIR})
+
+# load r2 cmake files
+rosbuild_find_ros_package(nasa_cmake)
+list(APPEND CMAKE_MODULE_PATH ${nasa_cmake_PACKAGE_PATH})
+
+#find_package(ProtocolBuffers REQUIRED)
+set(PROTO_FILES ${PROJECT_SOURCE_DIR}/proto/ProbeMsgs.proto
+                ${PROJECT_SOURCE_DIR}/proto/RTCRemoteMsgs.proto)
+run_protogen("${PROTO_FILES}")
+
+#common commands for building c++ executables and libraries
+rosbuild_add_library(${PROJECT_NAME} src/RosMsgPrinter.cpp)
+
 #common commands for building c++ executables and libraries
 #rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
 #target_link_libraries(${PROJECT_NAME} another_library)

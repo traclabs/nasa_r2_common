@@ -33,7 +33,7 @@ from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Pose
 from geometry_msgs.msg import PoseStamped
 
-from r2_msgs.srv import *
+from nasa_r2_common_msgs.srv import *
 #from r2_gazebo.srv import *
 #from r2_sensing.srv import *
 

@@ -1,0 +1,58 @@
+message Port {
+    required string name = 1;
+    required string protocol = 2;
+    required string type = 3;
+    optional string default = 4;
+}
+
+message PortList {
+    repeated Port port = 1;
+}
+
+message Block {
+    required string name = 1;
+    required string path = 2;
+    optional PortList input = 3;
+    optional PortList output = 4;
+}
+
+message BlockLibrary {
+    repeated Block block = 1;
+}
+
+message RTCRemoteCommand {
+    enum MsgType {
+        PLAY = 0;
+        PAUSE = 1;
+        STOP = 2;
+        GET_BLOCKS = 3;
+		LOAD = 4;
+		FORCE = 5;
+    }
+    required MsgType type = 1;
+	optional Block block = 2;
+	optional string data = 3;
+	optional EventLibrary events = 4;
+}
+
+message Event {
+	required string id = 1;
+	required string name = 2;
+	optional bool breakpoint = 3;
+}
+
+message EventLibrary {
+	repeated Event event = 1;
+}
+
+message RTCStatus {
+	enum MsgType {
+		BLOCK_LIBRARY = 0;
+		EVENT_LIBRARY = 1;
+        ACTIVE_PROGRAM = 3;
+	}
+	required MsgType type = 1;
+	optional BlockLibrary blocks = 2;
+	optional EventLibrary events = 3;
+    optional string active_program = 4;
+}

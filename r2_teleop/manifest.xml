@@ -14,7 +14,7 @@
   <depend package="tf"/>
   <depend package="geometry_msgs"/>
   <depend package="sensor_msgs"/>
-  <depend package="r2_msgs"/>
+  <depend package="nasa_r2_common_msgs"/>
   <depend package="kdl"/>
 
 </package>

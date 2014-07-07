@@ -1,10 +1,10 @@
 <package>
-  <description brief="r2_msgs">
+  <description brief="nasa_r2_common_msgs">
 
-     r2_msgs
+     nasa_r2_common_msgs
 
   </description>
-  <author>Paul Dinh</author>
+  <author>Paul Dinh. Maintained by Jennifer Turner</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/r2_msgs</url>
@@ -12,7 +12,9 @@
   <depend package="std_msgs"/>
   <depend package="visualization_msgs"/>
   <depend package="geometry_msgs"/>
-<!--  <rosdep name="protobuf-dev" /> -->
+  <depend package="trajectory_msgs"/>
+  <rosdep name="protobuf-dev" />
+  <rosdep name="python-protobuf" />
   
 </package>
 
