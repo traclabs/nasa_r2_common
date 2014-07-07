@@ -13,9 +13,10 @@
   <depend package="visualization_msgs"/>
   <depend package="geometry_msgs"/>
   <depend package="trajectory_msgs"/>
+<!--
   <rosdep name="protobuf-dev" />
   <rosdep name="python-protobuf" />
-  
+-->
 </package>
 
 
