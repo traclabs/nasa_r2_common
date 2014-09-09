@@ -1,49 +1,56 @@
-cmake_minimum_required(VERSION 2.4.6)
-include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+cmake_minimum_required(VERSION 2.8.3)
+project(r2_msgs)
 
-# Set the build type.  Options are:
-#  Coverage       : w/ debug symbols, w/o optimization, w/ code-coverage
-#  Debug          : w/ debug symbols, w/o optimization
-#  Release        : w/o debug symbols, w/ optimization
-#  RelWithDebInfo : w/ debug symbols, w/ optimization
-#  MinSizeRel     : w/o debug symbols, w/ optimization, stripped binaries
-#set(ROS_BUILD_TYPE RelWithDebInfo)
+find_package(catkin REQUIRED COMPONENTS message_generation message_runtime std_msgs visualization_msgs geometry_msgs)
 
-rosbuild_init()
+## Generate messages in the 'msg' folder
+add_message_files(
+  FILES
+  Gains.msg
+  JointControl.msg
+  JointStatusArray.msg
+  JointStatus.msg
+  PDMCStatus.msg
+  PoseCommandArray.msg
+  PoseCommand.msg
+  PoseCommandParams.msg
+  PoseCommandStatus.msg
+  PoseTwistStamped.msg
+  TorsoStatus.msg
+)
 
-#set the default path for built executables to the "bin" directory
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-#set the default path for built libraries to the "lib" directory
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+## Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  ParseTableScene.srv
+  Power.srv
+  ResetTableScene.srv
+  Servo.srv
+  SetJointMode.srv
+  SetTipName.srv
+  TakeSnapshot.srv
+)
 
-#uncomment if you have defined messages
-rosbuild_genmsg()
-#uncomment if you have defined services
-rosbuild_gensrv()
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  geometry_msgs
+  visualization_msgs
+)
 
-rosbuild_find_ros_package(nasa_cmake)
-list(APPEND CMAKE_MODULE_PATH ${nasa_cmake_PACKAGE_PATH})
-find_package(Log4cpp REQUIRED)
-include_directories(${Log4cpp_INCLUDE_DIR})
-#find_package(ProtocolBuffers REQUIRED)
-#include_directories(${ProtocolBuffers_INCLUDE_DIR})
-
-# load r2 cmake files
-rosbuild_find_ros_package(nasa_cmake)
-list(APPEND CMAKE_MODULE_PATH ${nasa_cmake_PACKAGE_PATH})
-
-#find_package(ProtocolBuffers REQUIRED)
-#set(PROTO_FILES ${PROJECT_SOURCE_DIR}/proto/ProbeMsgs.proto
-#                ${PROJECT_SOURCE_DIR}/proto/RTCRemoteMsgs.proto)
-#run_protogen("${PROTO_FILES}")
-
-#common commands for building c++ executables and libraries
-#rosbuild_add_library(${PROJECT_NAME} src/RosMsgPrinter.cpp)
-
-#common commands for building c++ executables and libraries
-#rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
-#target_link_libraries(${PROJECT_NAME} another_library)
-#rosbuild_add_boost_directories()
-#rosbuild_link_boost(${PROJECT_NAME} thread)
-#rosbuild_add_executable(example examples/example.cpp)
-#target_link_libraries(example ${PROJECT_NAME})
+###################################
+## catkin specific configuration ##
+###################################
+## The catkin_package macro generates cmake config files for your package
+## Declare things to be passed to dependent projects
+## INCLUDE_DIRS: uncomment this if you package contains header files
+## LIBRARIES: libraries you create in this project that dependent projects also need
+## CATKIN_DEPENDS: catkin_packages dependent projects also need
+## DEPENDS: system dependencies of this project that dependent projects also need
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES r2_msgs
+   CATKIN_DEPENDS std_msgs geometry_msgs visualization_msgs message_generation message_runtime
+#  DEPENDS system_lib
+)

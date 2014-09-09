@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(r2_description)
+project(r2_control)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -10,7 +10,10 @@ find_package(catkin REQUIRED)
 # find_package(Boost REQUIRED COMPONENTS system)
 
 
-execute_process(COMMAND /bin/bash ${PROJECT_SOURCE_DIR}/generateXml.sh)
+## Uncomment this if the package has a setup.py. This macro ensures
+## modules and global scripts declared therein get installed
+## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
+# catkin_python_setup()
 
 ################################################
 ## Declare ROS messages, services and actions ##
