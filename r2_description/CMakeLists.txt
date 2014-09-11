@@ -10,7 +10,7 @@ find_package(catkin REQUIRED)
 # find_package(Boost REQUIRED COMPONENTS system)
 
 
-execute_process(COMMAND /bin/bash ${PROJECT_SOURCE_DIR}/generateXml.sh)
+#execute_process(COMMAND /bin/bash ${PROJECT_SOURCE_DIR}/generateXml.sh)
 
 ################################################
 ## Declare ROS messages, services and actions ##

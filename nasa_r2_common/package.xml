@@ -18,7 +18,7 @@
   <run_depend>r2_description</run_depend>
   <run_depend>r2_moveit_config</run_depend>
   <run_depend>r2_fullbody_moveit_config</run_depend>
-  <run_depend>r2_msgs</run_depend>
+  <run_depend>nasa_r2_common_msgs</run_depend>
 
   <buildtool_depend>catkin</buildtool_depend>
 

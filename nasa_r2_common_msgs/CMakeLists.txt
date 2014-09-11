@@ -1,22 +1,67 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(r2_msgs)
+project(nasa_r2_common_msgs)
 
-find_package(catkin REQUIRED COMPONENTS message_generation message_runtime std_msgs visualization_msgs geometry_msgs)
+find_package(catkin REQUIRED COMPONENTS message_generation message_runtime std_msgs visualization_msgs geometry_msgs trajectory_msgs)
 
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  CommandStatus.msg
+  ControllerJointSettings.msg
+  ControllerPoseSettings.msg
+  ForceControlAxisArray.msg
+  ForceControlAxis.msg
   Gains.msg
+  JointCapability.msg
+  JointCommand.msg
+  JointControlCalibrationMode.msg
+  JointControlClearFaultMode.msg
+  JointControlCoeffState.msg
+  JointControlCommandMode.msg
+  JointControlDataArray.msg
+  JointControlData.msg
+  JointControlMode.msg
   JointControl.msg
   JointStatusArray.msg
   JointStatus.msg
+  JointTrajectoryReplan.msg
+  LabeledControllerJointSettings.msg
+  LabeledControllerPoseSettings.msg
+  LabeledGains.msg
+  LabeledGripperPositionCommand.msg
+  LabeledJointControlDataArray.msg
+  LabeledJointState.msg
+  LabeledJointTrajectory.msg
+  LabeledPoseTrajectory.msg
+  LabeledTrajectoryMonitorFactors.msg
+  MappedType.msg
+  Modes.msg
+  Parameter.msg
   PDMCStatus.msg
   PoseCommandArray.msg
   PoseCommand.msg
   PoseCommandParams.msg
   PoseCommandStatus.msg
+  PoseState.msg
+  PoseTrajectory.msg
+  PoseTrajectoryPoint.msg
+  PoseTrajectoryReplan.msg
   PoseTwistStamped.msg
+  PowerState.msg
+  PriorityArray.msg
+  ReplanType.msg
+  SetParameterRequest.msg
+  SetParameterResponse.msg
+  StringArray.msg
+  SystemCore.msg
+  SystemStatus.msg
   TorsoStatus.msg
+  TrajectoryMonitorFactors.msg
+  ValueType.msg
+  VariantMapArray.msg
+  VariantMap.msg
+  WrenchMonitorLimit.msg
+  WrenchState.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -37,6 +82,7 @@ generate_messages(
   std_msgs
   geometry_msgs
   visualization_msgs
+  trajectory_msgs
 )
 
 ###################################
@@ -51,6 +97,6 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES r2_msgs
-   CATKIN_DEPENDS std_msgs geometry_msgs visualization_msgs message_generation message_runtime
+   CATKIN_DEPENDS std_msgs geometry_msgs visualization_msgs trajectory_msgs message_generation message_runtime
 #  DEPENDS system_lib
 )
