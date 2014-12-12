@@ -86,10 +86,10 @@ controller_list:
   - name: fake_left_foot_controller
     joints:
       - r2/left_leg/gripper/joint0
-      - r2/left_leg/gripper/joint1
-      - r2/left_leg/gripper/joint2
+      - r2/left_leg/gripper/jawLeft
+      - r2/left_leg/gripper/jawRight
   - name: fake_right_foot_controller
     joints:
       - r2/right_leg/gripper/joint0
-      - r2/right_leg/gripper/joint1
-      - r2/right_leg/gripper/joint2
+      - r2/right_leg/gripper/jawLeft
+      - r2/right_leg/gripper/jawRight

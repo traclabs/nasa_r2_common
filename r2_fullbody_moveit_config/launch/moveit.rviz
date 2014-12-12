@@ -8,7 +8,7 @@ Panels:
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.74256
-    Tree Height: 931
+    Tree Height: 957
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -738,7 +738,7 @@ Visualization Manager:
       Marker Topic: /r2/move_group/planned_path_visualization
       Name: Path Visualization Markers
       Namespaces:
-        r2: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Camera
@@ -757,9 +757,7 @@ Visualization Manager:
         Left Foot Camera Image: true
         Left Foot CbN Intensity: true
         Left Foot CbN Points: true
-        Left Head Camera: true
         MotionPlanning: true
-        OccupancyMap: true
         Path Visualization Markers: true
         R2 Teleop: true
         Right Foot Camera Image: true
@@ -787,25 +785,23 @@ Visualization Manager:
         Left Foot CbN Points: true
         Left Head Camera: true
         MotionPlanning: true
-        OccupancyMap: true
         Path Visualization Markers: true
         R2 Teleop: true
         Right Foot Camera Image: true
         Right Foot CbN Intensity: true
         Right Foot CbN Points: true
-        Right Head Camera: true
         RobotModel: true
         Value: true
       Zoom Factor: 1
     - Class: rviz/Camera
-      Enabled: true
+      Enabled: false
       Image Rendering: background and overlay
       Image Topic: /r2/asus/rgb/image_raw
       Name: Asus Camera
       Overlay Alpha: 0.5
       Queue Size: 2
       Transport Hint: raw
-      Value: true
+      Value: false
       Visibility:
         Asus Point Cloud: true
         Grid: true
@@ -814,7 +810,6 @@ Visualization Manager:
         Left Foot CbN Points: true
         Left Head Camera: true
         MotionPlanning: true
-        OccupancyMap: true
         Path Visualization Markers: true
         R2 Teleop: true
         Right Foot Camera Image: true
@@ -885,8 +880,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.00024125
-        Min Value: -0.000530362
+        Max Value: 0.000300825
+        Min Value: -0.000516742
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -955,15 +950,6 @@ Visualization Manager:
       Queue Size: 2
       Transport Hint: raw
       Value: false
-    - Alpha: 0.7
-      Class: octomap_rviz_plugin/OccupancyMap
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Max. Octree Depth: 16
-      Name: OccupancyMap
-      Octomap Binary Topic: ""
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
@@ -1001,7 +987,7 @@ Window Geometry:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1171
+  Height: 1176
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -1014,7 +1000,7 @@ Window Geometry:
     collapsed: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000027d00000438fc020000000cfb000000160041007300750073002000430061006d0065007200610300000356000001890000034200000299fb000000100044006900730070006c006100790073010000003f00000438000000e900fffffffb0000000800480065006c00700000000342000000bb0000007c00fffffffb0000000a0056006900650077007300000003a5000000b6000000b600fffffffb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006700000002480000016b0000016b00fffffffb0000000c00430061006d0065007200610100000356000001210000000000000000fb0000002e004c00650066007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000025e000001420000001600fffffffb000000300052006900670068007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000034a0000012d0000001600fffffffb0000002e0052006900670068007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000002f9000000d10000001600fffffffb0000002c004c00650066007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000003a6000000d10000001600fffffffb00000020004c00650066007400200048006500610064002000430061006d00650072006102000000b000000072000002aa00000289fb000000220052006900670068007400200048006500610064002000430061006d006500720061020000035a00000072000002a700000289000004fb0000043800000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000001000000000000027d00000452fc020000000cfb000000160041007300750073002000430061006d0065007200610200000356000001890000034200000299fb000000100044006900730070006c006100790073010000002800000452000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003a5000000b6000000b000fffffffb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006700000002480000016b0000017400fffffffb0000000c00430061006d0065007200610100000356000001210000000000000000fb0000002e004c00650066007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000025e000001420000001600fffffffb000000300052006900670068007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000034a0000012d0000001600fffffffb0000002e0052006900670068007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000002f9000000d10000001600fffffffb0000002c004c00650066007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000003a6000000d10000001600fffffffb00000020004c00650066007400200048006500610064002000430061006d00650072006102000000b000000072000002aa00000289fb000000220052006900670068007400200048006500610064002000430061006d006500720061020000035a00000072000002a700000289000004bc0000045200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Right Foot Camera Image:
     collapsed: false
   Right Foot CbN Intensity:
@@ -1023,6 +1009,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1918
-  X: 1911
-  Y: -8
+  Width: 1855
+  X: 1985
+  Y: 24

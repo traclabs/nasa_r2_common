@@ -58,7 +58,7 @@
     <limit effort="330.0" lower="-.5" upper=".5" velocity="1.0"/>
   </joint>
 
-  <joint name="${robot_name}left_leg/gripper/joint1" type="revolute">
+  <joint name="${robot_name}left_leg/gripper/jawLeft" type="revolute">
     <parent link="${robot_name}left_leg_foot"/>
     <child link="${robot_name}left_leg_jaw0"/>
     <origin rpy="0.0 0 0" xyz="0.01905 0 0.17546"/>
@@ -67,7 +67,7 @@
     <limit effort="330.0" lower="-.5" upper=".5" velocity="1.0"/>
   </joint>
 
-  <joint name="${robot_name}left_leg/gripper/joint2" type="revolute">
+  <joint name="${robot_name}left_leg/gripper/jawRight" type="revolute">
     <parent link="${robot_name}left_leg_foot"/>
     <child link="${robot_name}left_leg_jaw1"/>
     <origin rpy="0.0 0 0" xyz="-0.01905 0 0.17546"/>

@@ -241,23 +241,23 @@
     </group_state>
     <group_state name="Left Foot Open" group="left_foot">
         <joint name="r2/left_leg/gripper/joint0" value="0" />
-        <joint name="r2/left_leg/gripper/joint1" value="-0.5" />
-        <joint name="r2/left_leg/gripper/joint2" value="-0.5" />
+        <joint name="r2/left_leg/gripper/jawLeft" value="-0.5" />
+        <joint name="r2/left_leg/gripper/jawRight" value="-0.5" />
     </group_state>
     <group_state name="Left Foot Close" group="left_foot">
         <joint name="r2/left_leg/gripper/joint0" value="0" />
-        <joint name="r2/left_leg/gripper/joint1" value="0" />
-        <joint name="r2/left_leg/gripper/joint2" value="0" />
+        <joint name="r2/left_leg/gripper/jawLeft" value="0" />
+        <joint name="r2/left_leg/gripper/jawRight" value="0" />
     </group_state>
     <group_state name="Right Foot Close" group="right_foot">
         <joint name="r2/right_leg/gripper/joint0" value="0" />
-        <joint name="r2/right_leg/gripper/joint1" value="0" />
-        <joint name="r2/right_leg/gripper/joint2" value="0" />
+        <joint name="r2/right_leg/gripper/jawLeft" value="0" />
+        <joint name="r2/right_leg/gripper/jawRight" value="0" />
     </group_state>
     <group_state name="Right Foot Open" group="right_foot">
         <joint name="r2/right_leg/gripper/joint0" value="0" />
-        <joint name="r2/right_leg/gripper/joint1" value="-0.5" />
-        <joint name="r2/right_leg/gripper/joint2" value="-0.5" />
+        <joint name="r2/right_leg/gripper/jawLeft" value="-0.5" />
+        <joint name="r2/right_leg/gripper/jawRight" value="-0.5" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_hand_ee" parent_link="r2/left_palm" group="left_hand" parent_group="left_arm" />

@@ -123,6 +123,7 @@ class r2ReadyPose :
 
         if not (len(j) == self.numJoints) :
             rospy.logerr("r2ReadyPose::formatJointStateMsg() -- incorrectly sized joint message")
+            print self.jointNames
             return None
 
         js = JointState()
@@ -172,22 +173,22 @@ if __name__ == '__main__':
         leftFootNames = []
         rightFootNames = []
         for i in range(len(foot_joints)):
-          leftLegNames.append("r2/left_leg/gripper" + foot_joints[i])
-          rightLegNames.append("r2/right_leg/gripper" + foot_joints[i])
+          leftFootNames.append("r2/left_leg/gripper/" + foot_joints[i])
+          rightFootNames.append("r2/right_leg/gripper/" + foot_joints[i])
 
-        r2TrajectoryGeneratorLeft = r2ReadyPose(leftNames, 500, '/r2/l_arm_controller')
-        r2TrajectoryGeneratorRight = r2ReadyPose(rightNames, 500, '/r2/r_arm_controller')
+        r2TrajectoryGeneratorLeftArm = r2ReadyPose(leftNames, 500, '/r2/l_arm_controller')
+        r2TrajectoryGeneratorRightArm = r2ReadyPose(rightNames, 500, '/r2/r_arm_controller')
         r2TrajectoryGeneratorNeck = r2ReadyPose(neckNames, 500, '/r2/neck_controller')
         r2TrajectoryGeneratorLeftHand = r2ReadyPose(rightHandNames, 10, '/r2/r_hand_controller')
         r2TrajectoryGeneratorRightHand = r2ReadyPose(leftHandNames, 10, '/r2/l_hand_controller')
-        r2TrajectoryGeneratorLeftLeg = r2FullBodyReadyPose(leftLegNames, 500, '/r2/l_leg_controller')
-        r2TrajectoryGeneratorRightLeg = r2FullBodyReadyPose(rightLegNames, 500, '/r2/r_leg_controller')
-        r2TrajectoryGeneratorLeftFoot = r2FullBodyReadyPose(leftFootNames, 10, '/r2/l_foot_controller')
-        r2TrajectoryGeneratorRightFoot = r2FullBodyReadyPose(rightFootNames, 10, '/r2/r_foot_controller')
+        r2TrajectoryGeneratorLeftLeg = r2ReadyPose(leftLegNames, 500, '/r2/l_leg_controller')
+        r2TrajectoryGeneratorRightLeg = r2ReadyPose(rightLegNames, 500, '/r2/r_leg_controller')
+        r2TrajectoryGeneratorLeftFoot = r2ReadyPose(leftFootNames, 10, '/r2/l_foot_controller')
+        r2TrajectoryGeneratorRightFoot = r2ReadyPose(rightFootNames, 10, '/r2/r_foot_controller')
         rospy.sleep(2)
 
-        lhrp = [0]*15
-        rhrp = [0]*15
+        lhrp = [0]*14
+        rhrp = [0]*14
 
         lfrp = [0, -0.5, -0.5]
         rfrp = [0, -0.5, -0.5]
