@@ -166,7 +166,7 @@
     </inertial>
   </link>
 
-  <joint name="${robot_name}right_arm/joint5" type="revolute">
+  <joint name="${robot_name}right_arm/wrist/pitch" type="revolute">
     <parent link="${robot_name}right_lower_arm"/>
     <child link="${robot_name}right_wrist_pitch"/>
     <origin rpy=" 1.5329 -0.0 0.0" xyz=" 0.0 0.0 0.3569462"/>
@@ -183,7 +183,7 @@
     </inertial>
   </link>
 
-  <joint name="${robot_name}right_arm/joint6" type="revolute">
+  <joint name="${robot_name}right_arm/wrist/yaw" type="revolute">
     <parent link="${robot_name}right_wrist_pitch"/>
     <child link="${robot_name}right_wrist_yaw"/>
     <origin rpy=" 1.5612 -0.0 1.5923" xyz=" -0.000139607 0.006491247 0.0"/>

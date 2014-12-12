@@ -118,8 +118,8 @@
         <joint name="r2/left_arm/joint2" value="-1.83" />
         <joint name="r2/left_arm/joint3" value="-2.44" />
         <joint name="r2/left_arm/joint4" value="1.4" />
-        <joint name="r2/left_arm/joint5" value="0" />
-        <joint name="r2/left_arm/joint6" value="0" />
+        <joint name="r2/left_arm/wrist/pitch" value="0" />
+        <joint name="r2/left_arm/wrist/yaw" value="0" />
     </group_state>
     <group_state name="Right Arm Ready Pose" group="right_arm">
         <joint name="r2/right_arm/joint0" value="-0.87" />
@@ -127,8 +127,8 @@
         <joint name="r2/right_arm/joint2" value="1.83" />
         <joint name="r2/right_arm/joint3" value="-2.44" />
         <joint name="r2/right_arm/joint4" value="-1.4" />
-        <joint name="r2/right_arm/joint5" value="0" />
-        <joint name="r2/right_arm/joint6" value="0" />
+        <joint name="r2/right_arm/wrist/pitch" value="0" />
+        <joint name="r2/right_arm/wrist/yaw" value="0" />
     </group_state>
     <group_state name="Left Arm High Ready Pose" group="left_arm">
         <joint name="r2/left_arm/joint0" value="-0.4" />
@@ -136,8 +136,8 @@
         <joint name="r2/left_arm/joint2" value="-1.57" />
         <joint name="r2/left_arm/joint3" value="-2" />
         <joint name="r2/left_arm/joint4" value="0.7" />
-        <joint name="r2/left_arm/joint5" value="0.3" />
-        <joint name="r2/left_arm/joint6" value="-0.6" />
+        <joint name="r2/left_arm/wrist/pitch" value="0.3" />
+        <joint name="r2/left_arm/wrist/yaw" value="-0.6" />
     </group_state>
     <group_state name="Right Arm High Ready Pose" group="right_arm">
         <joint name="r2/right_arm/joint0" value=" 0.4" />
@@ -145,8 +145,8 @@
         <joint name="r2/right_arm/joint2" value=" 1.57" />
         <joint name="r2/right_arm/joint3" value="-2.0" />
         <joint name="r2/right_arm/joint4" value="-0.7" />
-        <joint name="r2/right_arm/joint5" value="0.3" />
-        <joint name="r2/right_arm/joint6" value="0.6" />
+        <joint name="r2/right_arm/wrist/pitch" value="0.3" />
+        <joint name="r2/right_arm/wrist/yaw" value="0.6" />
     </group_state>
     <group_state name="Head Ready Pose" group="head">
         <joint name="r2/neck/joint0" value="-0.09" />
@@ -190,84 +190,84 @@
         <joint name="r2/right_leg/joint6" value="-2.5" />
     </group_state>
     <group_state name="Left Hand Close" group="left_hand">
-        <joint name="r2/left_arm/hand/index/joint0" value="0" />
-        <joint name="r2/left_arm/hand/index/joint1" value="1" />
-        <joint name="r2/left_arm/hand/index/joint2" value="1" />
-        <joint name="r2/left_arm/hand/index/joint3" value="1" />
-        <joint name="r2/left_arm/hand/little/joint0" value="1" />
-        <joint name="r2/left_arm/hand/little/joint1" value="1" />
-        <joint name="r2/left_arm/hand/little/joint2" value="1" />
-        <joint name="r2/left_arm/hand/middle/joint0" value="0" />
-        <joint name="r2/left_arm/hand/middle/joint1" value="1" />
-        <joint name="r2/left_arm/hand/middle/joint2" value="1" />
-        <joint name="r2/left_arm/hand/middle/joint3" value="1" />
-        <joint name="r2/left_arm/hand/ring/joint0" value="1" />
-        <joint name="r2/left_arm/hand/ring/joint1" value="1" />
-        <joint name="r2/left_arm/hand/ring/joint2" value="1" />
-        <joint name="r2/left_arm/hand/thumb/joint0" value="-1.2217" />
-        <joint name="r2/left_arm/hand/thumb/joint1" value="0" />
-        <joint name="r2/left_arm/hand/thumb/joint2" value="1" />
-        <joint name="r2/left_arm/hand/thumb/joint3" value="0.5" />
+        <joint name="r2/left_arm/hand/index/yaw" value="0" />
+        <joint name="r2/left_arm/hand/index/proximal" value="1" />
+        <joint name="r2/left_arm/hand/index/medial" value="1" />
+        <joint name="r2/left_arm/hand/index/distal" value="1" />
+        <joint name="r2/left_arm/hand/little/proximal" value="1" />
+        <joint name="r2/left_arm/hand/little/medial" value="1" />
+        <joint name="r2/left_arm/hand/little/distal" value="1" />
+        <joint name="r2/left_arm/hand/middle/yaw" value="0" />
+        <joint name="r2/left_arm/hand/middle/proximal" value="1" />
+        <joint name="r2/left_arm/hand/middle/medial" value="1" />
+        <joint name="r2/left_arm/hand/middle/distal" value="1" />
+        <joint name="r2/left_arm/hand/ring/proximal" value="1" />
+        <joint name="r2/left_arm/hand/ring/medial" value="1" />
+        <joint name="r2/left_arm/hand/ring/distal" value="1" />
+        <joint name="r2/left_arm/hand/thumb/roll" value="-1.2217" />
+        <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
+        <joint name="r2/left_arm/hand/thumb/medial" value="1" />
+        <joint name="r2/left_arm/hand/thumb/distal" value="0.5" />
     </group_state>
     <group_state name="Left Hand Open" group="left_hand">
-        <joint name="r2/left_arm/hand/index/joint0" value="0" />
-        <joint name="r2/left_arm/hand/index/joint1" value="0" />
-        <joint name="r2/left_arm/hand/index/joint2" value="0" />
-        <joint name="r2/left_arm/hand/index/joint3" value="0" />
-        <joint name="r2/left_arm/hand/little/joint0" value="0" />
-        <joint name="r2/left_arm/hand/little/joint1" value="0" />
-        <joint name="r2/left_arm/hand/little/joint2" value="0" />
-        <joint name="r2/left_arm/hand/middle/joint0" value="0" />
-        <joint name="r2/left_arm/hand/middle/joint1" value="0" />
-        <joint name="r2/left_arm/hand/middle/joint2" value="0" />
-        <joint name="r2/left_arm/hand/middle/joint3" value="0" />
-        <joint name="r2/left_arm/hand/ring/joint0" value="0" />
-        <joint name="r2/left_arm/hand/ring/joint1" value="0" />
-        <joint name="r2/left_arm/hand/ring/joint2" value="0" />
-        <joint name="r2/left_arm/hand/thumb/joint0" value="0" />
-        <joint name="r2/left_arm/hand/thumb/joint1" value="0" />
-        <joint name="r2/left_arm/hand/thumb/joint2" value="0" />
-        <joint name="r2/left_arm/hand/thumb/joint3" value="0" />
+        <joint name="r2/left_arm/hand/index/yaw" value="0" />
+        <joint name="r2/left_arm/hand/index/proximal" value="0" />
+        <joint name="r2/left_arm/hand/index/medial" value="0" />
+        <joint name="r2/left_arm/hand/index/distal" value="0" />
+        <joint name="r2/left_arm/hand/little/proximal" value="0" />
+        <joint name="r2/left_arm/hand/little/medial" value="0" />
+        <joint name="r2/left_arm/hand/little/distal" value="0" />
+        <joint name="r2/left_arm/hand/middle/yaw" value="0" />
+        <joint name="r2/left_arm/hand/middle/proximal" value="0" />
+        <joint name="r2/left_arm/hand/middle/medial" value="0" />
+        <joint name="r2/left_arm/hand/middle/distal" value="0" />
+        <joint name="r2/left_arm/hand/ring/proximal" value="0" />
+        <joint name="r2/left_arm/hand/ring/medial" value="0" />
+        <joint name="r2/left_arm/hand/ring/distal" value="0" />
+        <joint name="r2/left_arm/hand/thumb/roll" value="0" />
+        <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
+        <joint name="r2/left_arm/hand/thumb/medial" value="0" />
+        <joint name="r2/left_arm/hand/thumb/distal" value="0" />
     </group_state>
     <group_state name="Right Hand Close" group="right_hand">
-        <joint name="r2/right_arm/hand/index/joint0" value="0" />
-        <joint name="r2/right_arm/hand/index/joint1" value="1" />
-        <joint name="r2/right_arm/hand/index/joint2" value="1" />
-        <joint name="r2/right_arm/hand/index/joint3" value="1" />
-        <joint name="r2/right_arm/hand/little/joint0" value="1" />
-        <joint name="r2/right_arm/hand/little/joint1" value="0.991" />
-        <joint name="r2/right_arm/hand/little/joint2" value="1" />
-        <joint name="r2/right_arm/hand/middle/joint0" value="0" />
-        <joint name="r2/right_arm/hand/middle/joint1" value="1" />
-        <joint name="r2/right_arm/hand/middle/joint2" value="1" />
-        <joint name="r2/right_arm/hand/middle/joint3" value="1" />
-        <joint name="r2/right_arm/hand/ring/joint0" value="1" />
-        <joint name="r2/right_arm/hand/ring/joint1" value="1" />
-        <joint name="r2/right_arm/hand/ring/joint2" value="1" />
-        <joint name="r2/right_arm/hand/thumb/joint0" value="1.2217" />
-        <joint name="r2/right_arm/hand/thumb/joint1" value="0" />
-        <joint name="r2/right_arm/hand/thumb/joint2" value="1" />
-        <joint name="r2/right_arm/hand/thumb/joint3" value="0.5" />
+        <joint name="r2/right_arm/hand/index/yaw" value="0" />
+        <joint name="r2/right_arm/hand/index/proximal" value="1" />
+        <joint name="r2/right_arm/hand/index/medial" value="1" />
+        <joint name="r2/right_arm/hand/index/distal" value="1" />
+        <joint name="r2/right_arm/hand/little/proximal" value="1" />
+        <joint name="r2/right_arm/hand/little/medial" value="0.991" />
+        <joint name="r2/right_arm/hand/little/distal" value="1" />
+        <joint name="r2/right_arm/hand/middle/yaw" value="0" />
+        <joint name="r2/right_arm/hand/middle/proximal" value="1" />
+        <joint name="r2/right_arm/hand/middle/medial" value="1" />
+        <joint name="r2/right_arm/hand/middle/distal" value="1" />
+        <joint name="r2/right_arm/hand/ring/proximal" value="1" />
+        <joint name="r2/right_arm/hand/ring/medial" value="1" />
+        <joint name="r2/right_arm/hand/ring/distal" value="1" />
+        <joint name="r2/right_arm/hand/thumb/roll" value="1.2217" />
+        <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
+        <joint name="r2/right_arm/hand/thumb/medial" value="1" />
+        <joint name="r2/right_arm/hand/thumb/distal" value="0.5" />
     </group_state>
     <group_state name="Right Hand Open" group="right_hand">
-        <joint name="r2/right_arm/hand/index/joint0" value="0" />
-        <joint name="r2/right_arm/hand/index/joint1" value="0" />
-        <joint name="r2/right_arm/hand/index/joint2" value="0" />
-        <joint name="r2/right_arm/hand/index/joint3" value="0" />
-        <joint name="r2/right_arm/hand/little/joint0" value="0" />
-        <joint name="r2/right_arm/hand/little/joint1" value="0" />
-        <joint name="r2/right_arm/hand/little/joint2" value="0" />
-        <joint name="r2/right_arm/hand/middle/joint0" value="0" />
-        <joint name="r2/right_arm/hand/middle/joint1" value="0" />
-        <joint name="r2/right_arm/hand/middle/joint2" value="0" />
-        <joint name="r2/right_arm/hand/middle/joint3" value="0" />
-        <joint name="r2/right_arm/hand/ring/joint0" value="0" />
-        <joint name="r2/right_arm/hand/ring/joint1" value="0" />
-        <joint name="r2/right_arm/hand/ring/joint2" value="0" />
-        <joint name="r2/right_arm/hand/thumb/joint0" value="0" />
-        <joint name="r2/right_arm/hand/thumb/joint1" value="0" />
-        <joint name="r2/right_arm/hand/thumb/joint2" value="0" />
-        <joint name="r2/right_arm/hand/thumb/joint3" value="0" />
+        <joint name="r2/right_arm/hand/index/yaw" value="0" />
+        <joint name="r2/right_arm/hand/index/proximal" value="0" />
+        <joint name="r2/right_arm/hand/index/medial" value="0" />
+        <joint name="r2/right_arm/hand/index/distal" value="0" />
+        <joint name="r2/right_arm/hand/little/proximal" value="0" />
+        <joint name="r2/right_arm/hand/little/medial" value="0" />
+        <joint name="r2/right_arm/hand/little/distal" value="0" />
+        <joint name="r2/right_arm/hand/middle/yaw" value="0" />
+        <joint name="r2/right_arm/hand/middle/proximal" value="0" />
+        <joint name="r2/right_arm/hand/middle/medial" value="0" />
+        <joint name="r2/right_arm/hand/middle/distal" value="0" />
+        <joint name="r2/right_arm/hand/ring/proximal" value="0" />
+        <joint name="r2/right_arm/hand/ring/medial" value="0" />
+        <joint name="r2/right_arm/hand/ring/distal" value="0" />
+        <joint name="r2/right_arm/hand/thumb/roll" value="0" />
+        <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
+        <joint name="r2/right_arm/hand/thumb/medial" value="0" />
+        <joint name="r2/right_arm/hand/thumb/distal" value="0" />
     </group_state>
     <group_state name="Left Foot Open" group="left_foot">
         <joint name="r2/left_leg/gripper/joint0" value="0" />
