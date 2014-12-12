@@ -1,0 +1,6 @@
+<launch>
+ <include file="$(find r2_moveit_config)/launch/craftsman_move_group.launch">
+  <arg name="publish_monitored_planning_scene" value="true" />
+ </include>
+ <include file="$(find r2_moveit_config)/launch/craftsman_moveit_rviz.launch"/>
+</launch>
