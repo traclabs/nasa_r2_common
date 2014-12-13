@@ -81,7 +81,7 @@
     <dynamics damping="${left_arm_hand_middle_j0_damping}" friction="${left_arm_hand_middle_j0_friction}"/>
   </joint>
 
-  <joint name="${robot_name}left_arm/hand/ring/proximal" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/ring" type="revolute">
     <parent link="${robot_name}left_wrist_yaw"/>
     <child link="${robot_name}left_ring_proximal"/>
     <origin xyz=" 0.1084570602 -0.0197673468 -0.012319 " rpy=" 1.57079632679 -0.0 -0.122172725275 " />
@@ -90,7 +90,7 @@
     <dynamics damping="${left_arm_hand_ring_j0_damping}" friction="${left_arm_hand_ring_j0_friction}"/>
   </joint>
 
-  <joint name="${robot_name}left_arm/hand/little/proximal" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/little" type="revolute">
     <parent link="${robot_name}left_wrist_yaw"/>
     <child link="${robot_name}left_little_proximal"/>
     <origin xyz=" 0.094635701 -0.0403792436 -0.0060878212 " rpy=" 1.60570321374 -0.0872667473393 -0.17453258148 " />
@@ -470,7 +470,7 @@
     </collision>
   </link>
 
-  <joint name="${robot_name}left_arm/hand/ring/medial" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/ringMedial" type="revolute">
     <parent link="${robot_name}left_ring_proximal"/>
     <child link="${robot_name}left_ring_medial"/>
     <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
@@ -498,7 +498,7 @@
     </collision>
   </link>
 
-  <joint name="${robot_name}left_arm/hand/ring/distal" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/ringDistal" type="revolute">
     <parent link="${robot_name}left_ring_medial"/>
     <child link="${robot_name}left_ring_distal"/>
     <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
@@ -558,7 +558,7 @@
     </collision>
   </link>
 
-  <joint name="${robot_name}left_arm/hand/little/medial" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/littleMedial" type="revolute">
     <parent link="${robot_name}left_little_proximal"/>
     <child link="${robot_name}left_little_medial"/>
     <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
@@ -586,7 +586,7 @@
     </collision>
   </link>
 
-  <joint name="${robot_name}left_arm/hand/little/distal" type="revolute">
+  <joint name="${robot_name}left_arm/hand/ringlittle/littleDistal" type="revolute">
     <parent link="${robot_name}left_little_medial"/>
     <child link="${robot_name}left_little_distal"/>
     <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />

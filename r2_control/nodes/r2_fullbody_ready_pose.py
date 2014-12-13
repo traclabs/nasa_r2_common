@@ -143,7 +143,7 @@ if __name__ == '__main__':
     rospy.init_node('r2_ready_pose')
     try:
         arm_joints = ["joint0", "joint1", "joint2", "joint3", "joint4", "wrist/pitch", "wrist/yaw"]
-        hand_joints = ["thumb/roll", "thumb/proximal", "thumb/medial", "thumb/distal", "index/yaw", "index/proximal", "index/medial", "middle/yaw", "middle/proximal", "middle/medial", "ring/proximal", "ring/medial", "little/proximal", "little/medial"]
+        hand_joints = ["thumb/roll", "thumb/proximal", "thumb/medial", "thumb/distal", "index/yaw", "index/proximal", "index/medial", "middle/yaw", "middle/proximal", "middle/medial", "ringlittle/ring", "ringlittle/ringMedial", "ringlittle/little", "ringlittle/littleMedial"]
         neck_joints = ["joint0", "joint1", "joint2"]
         leg_joints = ["joint0", "joint1", "joint2", "joint3", "joint4", "joint5", "joint6"]
         foot_joints = ["joint0", "jawLeft", "jawRight"]

@@ -35,12 +35,12 @@ controller_list:
       - r2/left_arm/hand/middle/proximal
       - r2/left_arm/hand/middle/medial
       - r2/left_arm/hand/middle/distal
-      - r2/left_arm/hand/little/proximal
-      - r2/left_arm/hand/little/medial
-      - r2/left_arm/hand/little/distal
-      - r2/left_arm/hand/ring/proximal
-      - r2/left_arm/hand/ring/medial
-      - r2/left_arm/hand/ring/distal
+      - r2/left_arm/hand/ringlittle/little
+      - r2/left_arm/hand/ringlittle/littleMedial
+      - r2/left_arm/hand/ringlittle/littleDistal
+      - r2/left_arm/hand/ringlittle/ring
+      - r2/left_arm/hand/ringlittle/ringMedial
+      - r2/left_arm/hand/ringlittle/ringDistal
       - r2/left_arm/hand/thumb/roll
       - r2/left_arm/hand/thumb/proximal
       - r2/left_arm/hand/thumb/medial
@@ -57,12 +57,12 @@ controller_list:
       - r2/right_arm/hand/middle/proximal
       - r2/right_arm/hand/middle/medial
       - r2/right_arm/hand/middle/distal
-      - r2/right_arm/hand/little/proximal
-      - r2/right_arm/hand/little/medial
-      - r2/right_arm/hand/little/distal
-      - r2/right_arm/hand/ring/proximal
-      - r2/right_arm/hand/ring/medial
-      - r2/right_arm/hand/ring/distal
+      - r2/right_arm/hand/ringlittle/little
+      - r2/right_arm/hand/ringlittle/littleMedial
+      - r2/right_arm/hand/ringlittle/littleDistal
+      - r2/right_arm/hand/ringlittle/ring
+      - r2/right_arm/hand/ringlittle/ringMedial
+      - r2/right_arm/hand/ringlittle/ringDistal
       - r2/right_arm/hand/thumb/roll
       - r2/right_arm/hand/thumb/proximal
       - r2/right_arm/hand/thumb/medial
