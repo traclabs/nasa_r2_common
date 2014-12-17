@@ -307,22 +307,22 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        r2/neck_base:
+        r2/neck_lower:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        r2/neck_lower_pitch:
+        r2/neck_upper:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        r2/neck_roll:
+        r2/head:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        r2/neck_upper_pitch:
+        r2/vision_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false

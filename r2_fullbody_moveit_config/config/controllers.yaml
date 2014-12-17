@@ -105,19 +105,19 @@ controller_list:
       - r2/right_leg/joint4
       - r2/right_leg/joint5
       - r2/right_leg/joint6
-  - name: r2/l_foot_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: true
-    joints:
-      - r2/left_leg/gripper/joint0
-      - r2/left_leg/gripper/jawLeft
-      - r2/left_leg/gripper/jawRight
-  - name: r2/r_foot_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: true
-    joints:
-      - r2/right_leg/gripper/joint0
-      - r2/right_leg/gripper/jawLeft
-      - r2/right_leg/gripper/jawRight
+#  - name: r2/l_foot_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - r2/left_leg/gripper/joint0
+#      - r2/left_leg/gripper/jawLeft
+#      - r2/left_leg/gripper/jawRight
+#  - name: r2/r_foot_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - r2/right_leg/gripper/joint0
+#      - r2/right_leg/gripper/jawLeft
+#      - r2/right_leg/gripper/jawRight

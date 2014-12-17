@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot>
 
-  <joint name="${robot_name}fixed/neck_roll/vision_base" type="fixed">
+  <joint name="${robot_name}fixed/head/vision_base" type="fixed">
     <parent link="${robot_name}head"/>
     <child link="${robot_name}head/vision_base"/>
     <origin rpy=" 1.5708 0.0 0.0 " xyz=" 0.0 -0.058 0.0074676"/>

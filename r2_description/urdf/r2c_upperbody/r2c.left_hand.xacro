@@ -298,46 +298,46 @@
     </collision>
   </link>
 
-<!--  <joint name="${robot_name}left_arm/hand/index/joint3" type="revolute">-->
-<!--    <parent link="${robot_name}left_index_medial"/>-->
-<!--    <child link="${robot_name}left_index_distal"/>-->
-<!--    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>-->
-<!--    <limit effort="10000000.0" lower="0.0" upper="1.5708" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_index_j3_damping}" friction="${left_arm_hand_index_j3_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/index/distal" type="revolute">
+    <parent link="${robot_name}left_index_medial"/>
+    <child link="${robot_name}left_index_distal"/>
+    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 0.0 0.0 " />
+    <axis xyz="0 0 1"/>
+    <limit effort="10000000.0" lower="0.0" upper="1.5708" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_index_j3_damping}" friction="${left_arm_hand_index_j3_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_index_distal">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </collision>-->
-<!--  </link>-->
+  <link name="${robot_name}left_index_distal">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </collision>
+  </link>
 
-<!--  <joint name="${robot_name}fixed/left_index_distal/left_index_tip" type="fixed">-->
-<!--    <parent link="${robot_name}left_index_distal"/>-->
-<!--    <child link="${robot_name}left_index_tip"/>-->
-<!--    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--  </joint>-->
+  <joint name="${robot_name}fixed/left_index_distal/left_index_tip" type="fixed">
+    <parent link="${robot_name}left_index_distal"/>
+    <child link="${robot_name}left_index_tip"/>
+    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+  </joint>
 
-<!--  <link name="${robot_name}left_index_tip">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--  </link>-->
+  <link name="${robot_name}left_index_tip">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+  </link>
 
   <link name="${robot_name}left_middle_base">
     <inertial>
@@ -410,46 +410,46 @@
     </collision>
   </link>
   
-<!--  <joint name="${robot_name}left_arm/hand/middle/joint3" type="revolute">-->
-<!--    <parent link="${robot_name}left_middle_medial"/>-->
-<!--    <child link="${robot_name}left_middle_distal"/>-->
-<!--    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>-->
-<!--    <limit effort="10000000.0" lower="0.0" upper="1.57" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_middle_j3_damping}" friction="${left_arm_hand_middle_j3_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/middle/distal" type="revolute">
+    <parent link="${robot_name}left_middle_medial"/>
+    <child link="${robot_name}left_middle_distal"/>
+    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+    <axis xyz="0 0 1"/>
+    <limit effort="10000000.0" lower="0.0" upper="1.57" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_middle_j3_damping}" friction="${left_arm_hand_middle_j3_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_middle_distal">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </collision>-->
-<!--  </link>-->
-<!--  -->
-<!--  <joint name="${robot_name}fixed/left_middle_distal/left_middle_tip" type="fixed">-->
-<!--    <parent link="${robot_name}left_middle_distal"/>-->
-<!--    <child link="${robot_name}left_middle_tip"/>-->
-<!--    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--  </joint>-->
+  <link name="${robot_name}left_middle_distal">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </collision>
+  </link>
+  
+  <joint name="${robot_name}fixed/left_middle_distal/left_middle_tip" type="fixed">
+    <parent link="${robot_name}left_middle_distal"/>
+    <child link="${robot_name}left_middle_tip"/>
+    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+  </joint>
 
-<!--  <link name="${robot_name}left_middle_tip">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--  </link>-->
+  <link name="${robot_name}left_middle_tip">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+  </link>
   
   <link name="${robot_name}left_ring_proximal">
     <inertial>
@@ -470,74 +470,74 @@
     </collision>
   </link>
 
-<!--  <joint name="${robot_name}left_arm/hand/ring/joint1" type="revolute">-->
-<!--    <parent link="${robot_name}left_ring_proximal"/>-->
-<!--    <child link="${robot_name}left_ring_medial"/>-->
-<!--    <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>-->
-<!--    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_ring_j1_damping}" friction="${left_arm_hand_ring_j1_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/ringlittle/ringMedial" type="revolute">
+    <parent link="${robot_name}left_ring_proximal"/>
+    <child link="${robot_name}left_ring_medial"/>
+    <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+    <axis xyz="0 0 1"/>
+    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_ring_j1_damping}" friction="${left_arm_hand_ring_j1_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_ring_medial">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>-->
-<!--    </collision>-->
-<!--  </link>-->
+  <link name="${robot_name}left_ring_medial">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+    </collision>
+  </link>
 
-<!--  <joint name="${robot_name}left_arm/hand/ring/joint2" type="revolute">-->
-<!--    <parent link="${robot_name}left_ring_medial"/>-->
-<!--    <child link="${robot_name}left_ring_distal"/>-->
-<!--    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>	-->
-<!--    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_ring_j2_damping}" friction="${left_arm_hand_ring_j2_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/ringlittle/ringDistal" type="revolute">
+    <parent link="${robot_name}left_ring_medial"/>
+    <child link="${robot_name}left_ring_distal"/>
+    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+    <axis xyz="0 0 1"/>	
+    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_ring_j2_damping}" friction="${left_arm_hand_ring_j2_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_ring_distal">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </collision>-->
-<!--  </link>-->
+  <link name="${robot_name}left_ring_distal">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </collision>
+  </link>
 
-<!--  <joint name="${robot_name}fixed/left_ring_distal/left_ring_tip" type="fixed">-->
-<!--    <parent link="${robot_name}left_ring_distal"/>-->
-<!--    <child link="${robot_name}left_ring_tip"/>-->
-<!--    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--  </joint>-->
+  <joint name="${robot_name}fixed/left_ring_distal/left_ring_tip" type="fixed">
+    <parent link="${robot_name}left_ring_distal"/>
+    <child link="${robot_name}left_ring_tip"/>
+    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+  </joint>
 
-<!--  <link name="${robot_name}left_ring_tip">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--  </link>-->
+  <link name="${robot_name}left_ring_tip">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+  </link>
 
   <link name="${robot_name}left_little_proximal">
     <inertial>
@@ -558,73 +558,73 @@
     </collision>
   </link>
 
-<!--  <joint name="${robot_name}left_arm/hand/little/joint1" type="revolute">-->
-<!--    <parent link="${robot_name}left_little_proximal"/>-->
-<!--    <child link="${robot_name}left_little_medial"/>-->
-<!--    <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>-->
-<!--    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_little_j1_damping}" friction="${left_arm_hand_little_j1_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/ringlittle/littleMedial" type="revolute">
+    <parent link="${robot_name}left_little_proximal"/>
+    <child link="${robot_name}left_little_medial"/>
+    <origin xyz=" 0.04445 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+    <axis xyz="0 0 1"/>
+    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_little_j1_damping}" friction="${left_arm_hand_little_j1_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_little_medial">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>-->
-<!--    </collision>-->
-<!--  </link>-->
+  <link name="${robot_name}left_little_medial">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+    </collision>
+  </link>
 
-<!--  <joint name="${robot_name}left_arm/hand/little/joint2" type="revolute">-->
-<!--    <parent link="${robot_name}left_little_medial"/>-->
-<!--    <child link="${robot_name}left_little_distal"/>-->
-<!--    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--    <axis xyz="0 0 1"/>-->
-<!--    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>-->
-<!--    <dynamics damping="${left_arm_hand_little_j2_damping}" friction="${left_arm_hand_little_j2_friction}"/>-->
-<!--  </joint>-->
+  <joint name="${robot_name}left_arm/hand/ringlittle/littleDistal" type="revolute">
+    <parent link="${robot_name}left_little_medial"/>
+    <child link="${robot_name}left_little_distal"/>
+    <origin xyz=" 0.03048 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+    <axis xyz="0 0 1"/>
+    <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>
+    <dynamics damping="${left_arm_hand_little_j2_damping}" friction="${left_arm_hand_little_j2_friction}"/>
+  </joint>
 
-<!--  <link name="${robot_name}left_little_distal">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--    <visual>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </visual>-->
-<!--    <collision>-->
-<!--      <geometry>-->
-<!--        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>-->
-<!--      </geometry>-->
-<!--      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>-->
-<!--    </collision>-->
-<!--  </link>-->
+  <link name="${robot_name}left_little_distal">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+    </collision>
+  </link>
 
-<!--  <joint name="${robot_name}fixed/left_little_distal/left_little_tip" type="fixed">-->
-<!--    <parent link="${robot_name}left_little_distal"/>-->
-<!--    <child link="${robot_name}left_little_tip"/>-->
-<!--    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />-->
-<!--  </joint>-->
+  <joint name="${robot_name}fixed/left_little_distal/left_little_tip" type="fixed">
+    <parent link="${robot_name}left_little_distal"/>
+    <child link="${robot_name}left_little_tip"/>
+    <origin xyz=" 0.024638 0.0 0.0 " rpy=" 0.0 -0.0 0.0 " />
+  </joint>
 
-<!--  <link name="${robot_name}left_little_tip">-->
-<!--    <inertial>-->
-<!--      <mass value=".0010"/>-->
-<!--      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>-->
-<!--    </inertial>-->
-<!--  </link>-->
+  <link name="${robot_name}left_little_tip">
+    <inertial>
+      <mass value=".0010"/>
+      <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
+    </inertial>
+  </link>
 
 </robot>

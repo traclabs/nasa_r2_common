@@ -13,14 +13,14 @@
 
   <joint name="${robot_name}neck/joint0" type="revolute">
     <parent link="${robot_name}waist_center"/>
-    <child link="${robot_name}neck_base"/>
+    <child link="${robot_name}neck_lower"/>
     <origin rpy=" -1.570796 -0.0 0.0 " xyz=" 0.08636 0.0 -0.6142228 "/>
     <dynamics damping="${neck_j0_damping}" friction="${neck_j0_friction}"/>
     <axis xyz="0 0 1"/>
     <limit effort="${effort_limit}" lower="-0.7" upper="0.175" velocity="${velocity_limit}"/>
   </joint>
 
-  <link name="${robot_name}neck_base">
+  <link name="${robot_name}neck_lower">
     <visual>
       <geometry>
          <mesh filename="package://r2_description/meshes/Neck_Lower.dae"/>
@@ -40,15 +40,15 @@
   </link>
 
   <joint name="${robot_name}neck/joint1" type="revolute">
-    <parent link="${robot_name}neck_base"/>
-    <child link="${robot_name}neck_lower_pitch"/>
+    <parent link="${robot_name}neck_lower"/>
+    <child link="${robot_name}neck_upper"/>
     <origin rpy=" -1.570796 -0.0 0.0 " xyz=" -0.0762 -0.0 0.0 "/>
     <dynamics damping="${neck_j1_damping}" friction="${neck_j1_friction}"/>
     <axis xyz="0 0 1"/>
     <limit effort="${effort_limit}" lower="-1.22" upper="1.22" velocity="${velocity_limit}"/>
   </joint>
 
-  <link name="${robot_name}neck_lower_pitch">
+  <link name="${robot_name}neck_upper">
    <visual>
       <geometry>
          <mesh filename="package://r2_description/meshes/Neck_Upper.dae"/>
@@ -68,15 +68,15 @@
   </link>
 
   <joint name="${robot_name}neck/joint2" type="revolute">
-    <parent link="${robot_name}neck_lower_pitch"/>
-    <child link="${robot_name}neck_roll"/>
+    <parent link="${robot_name}neck_upper"/>
+    <child link="${robot_name}head"/>
     <origin rpy=" 1.570796 -0.0 0.0 " xyz=" 0.0508 0.0 0.1777619 "/>
     <dynamics damping="${neck_j2_damping}" friction="${neck_j2_friction}"/>
     <axis xyz="0 0 1"/>
     <limit effort="${effort_limit}" lower="-0.7" upper="0.175" velocity="${velocity_limit}"/>
   </joint>
 
-  <link name="${robot_name}neck_roll">
+  <link name="${robot_name}head">
     <visual>
       <geometry>
          <mesh filename="package://r2_description/meshes/Head.dae"/>
@@ -95,37 +95,37 @@
     </inertial>
   </link>
 
-  <joint name="${robot_name}fixed/neck_roll/neck_upper_pitch" type="fixed">
-    <parent link="${robot_name}neck_roll"/>
-    <child link="${robot_name}neck_upper_pitch"/>
+  <joint name="${robot_name}fixed/head/vision_base" type="fixed">
+    <parent link="${robot_name}head"/>
+    <child link="${robot_name}vision_base"/>
     <origin rpy=" 1.570796 -0.0 0.0 " xyz=" 0.0 0.0 0.0 "/>
   </joint>
 
-  <link name="${robot_name}neck_upper_pitch">
+  <link name="${robot_name}vision_base">
     <inertial>
       <mass value=".1"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
 
-  <joint name="${robot_name}fixed/neck_upper_pitch/asus_frame" type="fixed">
-    <parent link="${robot_name}neck_upper_pitch"/>
+  <joint name="${robot_name}fixed/vision_base/asus_frame" type="fixed">
+    <parent link="${robot_name}vision_base"/>
     <child link="${robot_name}asus_frame"/>
      <origin rpy="1.50 0.0 1.57 " xyz="0.12 -0.015 -0.14 "/>
 <!-- OK    <origin rpy="1.45 0 1.57 " xyz="0.11 -0.040 -0.15 "/>  -->
 <!-- ORIGINAL     <origin rpy="1.57 0 1.57 " xyz="0.066675 -0.0508 -0.116205 "/>  -->
   </joint>
 
-  <joint name="${robot_name}fixed/neck_upper_pitch/simulated_asus_camera_frame" type="fixed">
-    <parent link="${robot_name}neck_upper_pitch"/>
+  <joint name="${robot_name}fixed/vision_base/simulated_asus_camera_frame" type="fixed">
+    <parent link="${robot_name}vision_base"/>
     <child link="${robot_name}simulated_asus_camera_frame"/>
     <dynamics damping="1.0" />
     <origin rpy="3.14 0 0" xyz="0.12 -0.015 -0.14 "/>
 <!--     <origin rpy="0 0 0" xyz="0.12 -0.015 -0.14 "/> -->
   </joint>
 
-  <joint name="${robot_name}fixed/neck_upper_pitch/simulated_asus_depth_frame" type="fixed">
-    <parent link="${robot_name}neck_upper_pitch"/>
+  <joint name="${robot_name}fixed/vision_base/simulated_asus_depth_frame" type="fixed">
+    <parent link="${robot_name}vision_base"/>
     <child link="${robot_name}simulated_asus_depth_frame"/>
     <dynamics damping="1.0" />
     <origin rpy="1.57 0 1.57" xyz="0.12 -0.015 -0.14 "/>
@@ -133,8 +133,8 @@
   </joint>
 
 
-  <joint name="${robot_name}fixed/neck_upper_pitch/vision_center_frame" type="fixed">
-    <parent link="${robot_name}neck_upper_pitch"/>
+  <joint name="${robot_name}fixed/vision_base/vision_center_frame" type="fixed">
+    <parent link="${robot_name}vision_base"/>
     <child link="${robot_name}vision_center_frame"/>
     <dynamics damping="1.0" />
     <origin rpy="1.57 -1.57 1.57" xyz=" 0.066675 0.0 -0.116205 "/>
