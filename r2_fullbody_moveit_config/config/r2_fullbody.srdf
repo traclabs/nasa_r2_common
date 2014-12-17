@@ -1568,4 +1568,6 @@
     <disable_collisions link1="r2/right_thumb_medial_prime" link2="r2/right_thumb_proximal" reason="Adjacent" />
     <disable_collisions link1="r2/right_thumb_medial_prime" link2="r2/right_upper_arm" reason="Never" />
     <disable_collisions link1="r2/right_thumb_proximal" link2="r2/right_upper_arm" reason="Never" />
+    <disable_collisions link1="r2/left_leg_jaw1" link2="r2/left_leg_jaw0" reason="Never" />
+    <disable_collisions link1="r2/right_leg_jaw1" link2="r2/right_leg_jaw0" reason="Never" />
 </robot>
