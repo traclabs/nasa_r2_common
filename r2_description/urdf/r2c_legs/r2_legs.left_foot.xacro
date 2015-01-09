@@ -62,7 +62,7 @@
     <parent link="${robot_name}left_leg_foot"/>
     <child link="${robot_name}left_leg_jaw0"/>
     <origin rpy="0.0 0 0" xyz="0.01905 0 0.17546"/>
-    <axis xyz="0 -1 0"/>
+    <axis xyz="0 1 0"/>
     <dynamics damping="${left_leg_gripper_j0_damping}" friction="${left_leg_gripper_j0_friction}"/>
     <limit effort="330.0" lower="-.5" upper=".5" velocity="1.0"/>
   </joint>
@@ -71,7 +71,7 @@
     <parent link="${robot_name}left_leg_foot"/>
     <child link="${robot_name}left_leg_jaw1"/>
     <origin rpy="0.0 0 0" xyz="-0.01905 0 0.17546"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="0 -1 0"/>
     <dynamics damping="${left_leg_gripper_j1_damping}" friction="${left_leg_gripper_j1_friction}"/>
     <limit effort="330.0" lower="-.5" upper=".5" velocity="1.0"/>
   </joint>
