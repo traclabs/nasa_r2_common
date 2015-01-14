@@ -30,62 +30,36 @@
         <joint name="r2/fixed/right_wrist_yaw/right_palm" />
     </group>
     <group name="left_hand">
-        <link name="r2/left_index_base" />
-        <link name="r2/left_index_yaw" />
-        <link name="r2/left_index_proximal" />
-        <link name="r2/left_index_medial" />
-        <link name="r2/left_index_distal" />
-        <link name="r2/left_index_tip" />
-        <link name="r2/left_middle_base" />
-        <link name="r2/left_middle_yaw" />
-        <link name="r2/left_middle_proximal" />
-        <link name="r2/left_middle_medial" />
-        <link name="r2/left_middle_distal" />
-        <link name="r2/left_middle_tip" />
-        <link name="r2/left_palm" />
-        <link name="r2/left_little_proximal" />
-        <link name="r2/left_little_medial" />
-        <link name="r2/left_little_distal" />
-        <link name="r2/left_little_tip" />
-        <link name="r2/left_ring_proximal" />
-        <link name="r2/left_ring_medial" />
-        <link name="r2/left_ring_distal" />
-        <link name="r2/left_ring_tip" />
-        <link name="r2/left_thumb_base" />
-        <link name="r2/left_thumb_proximal" />
-        <link name="r2/left_thumb_medial_prime" />
-        <link name="r2/left_thumb_medial" />
-        <link name="r2/left_thumb_distal" />
-        <link name="r2/left_thumb_tip" />
+        <joint name="r2/left_arm/hand/index/yaw" />
+        <joint name="r2/left_arm/hand/index/proximal" />
+        <joint name="r2/left_arm/hand/index/medial" />
+        <joint name="r2/left_arm/hand/ringlittle/little" />
+        <joint name="r2/left_arm/hand/ringlittle/littleMedial" />
+        <joint name="r2/left_arm/hand/middle/yaw" />
+        <joint name="r2/left_arm/hand/middle/proximal" />
+        <joint name="r2/left_arm/hand/middle/medial" />
+        <joint name="r2/left_arm/hand/ringlittle/ring" />
+        <joint name="r2/left_arm/hand/ringlittle/ringMedial" />
+        <joint name="r2/left_arm/hand/thumb/roll" />
+        <joint name="r2/left_arm/hand/thumb/proximal" />
+        <joint name="r2/left_arm/hand/thumb/medial" />
+        <joint name="r2/left_arm/hand/thumb/distal" />
     </group>
     <group name="right_hand">
-        <link name="r2/right_index_base" />
-        <link name="r2/right_index_yaw" />
-        <link name="r2/right_index_proximal" />
-        <link name="r2/right_index_medial" />
-        <link name="r2/right_index_distal" />
-        <link name="r2/right_index_tip" />
-        <link name="r2/right_middle_base" />
-        <link name="r2/right_middle_yaw" />
-        <link name="r2/right_middle_proximal" />
-        <link name="r2/right_middle_medial" />
-        <link name="r2/right_middle_distal" />
-        <link name="r2/right_middle_tip" />
-        <link name="r2/right_palm" />
-        <link name="r2/right_little_proximal" />
-        <link name="r2/right_little_medial" />
-        <link name="r2/right_little_distal" />
-        <link name="r2/right_little_tip" />
-        <link name="r2/right_ring_proximal" />
-        <link name="r2/right_ring_medial" />
-        <link name="r2/right_ring_distal" />
-        <link name="r2/right_ring_tip" />
-        <link name="r2/right_thumb_base" />
-        <link name="r2/right_thumb_proximal" />
-        <link name="r2/right_thumb_medial_prime" />
-        <link name="r2/right_thumb_medial" />
-        <link name="r2/right_thumb_distal" />
-        <link name="r2/right_thumb_tip" />
+        <joint name="r2/right_arm/hand/index/yaw" />
+        <joint name="r2/right_arm/hand/index/proximal" />
+        <joint name="r2/right_arm/hand/index/medial" />
+        <joint name="r2/right_arm/hand/ringlittle/little" />
+        <joint name="r2/right_arm/hand/ringlittle/littleMedial" />
+        <joint name="r2/right_arm/hand/middle/yaw" />
+        <joint name="r2/right_arm/hand/middle/proximal" />
+        <joint name="r2/right_arm/hand/middle/medial" />
+        <joint name="r2/right_arm/hand/ringlittle/ring" />
+        <joint name="r2/right_arm/hand/ringlittle/ringMedial" />
+        <joint name="r2/right_arm/hand/thumb/roll" />
+        <joint name="r2/right_arm/hand/thumb/proximal" />
+        <joint name="r2/right_arm/hand/thumb/medial" />
+        <joint name="r2/right_arm/hand/thumb/distal" />
     </group>
     <group name="head">
         <joint name="r2/neck/joint0" />
@@ -166,17 +140,13 @@
         <joint name="r2/left_arm/hand/index/yaw" value="0" />
         <joint name="r2/left_arm/hand/index/proximal" value="1" />
         <joint name="r2/left_arm/hand/index/medial" value="1" />
-        <joint name="r2/left_arm/hand/index/distal" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/little" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/littleMedial" value="1" />
-        <joint name="r2/left_arm/hand/ringlittle/littleDistal" value="1" />
         <joint name="r2/left_arm/hand/middle/yaw" value="0" />
         <joint name="r2/left_arm/hand/middle/proximal" value="1" />
         <joint name="r2/left_arm/hand/middle/medial" value="1" />
-        <joint name="r2/left_arm/hand/middle/distal" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/ring" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/ringMedial" value="1" />
-        <joint name="r2/left_arm/hand/ringlittle/ringDistal" value="1" />
         <joint name="r2/left_arm/hand/thumb/roll" value="-1.2217" />
         <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/left_arm/hand/thumb/medial" value="1" />
@@ -186,17 +156,13 @@
         <joint name="r2/right_arm/hand/index/yaw" value="0" />
         <joint name="r2/right_arm/hand/index/proximal" value="1" />
         <joint name="r2/right_arm/hand/index/medial" value="1" />
-        <joint name="r2/right_arm/hand/index/distal" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/little" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/littleMedial" value="1" />
-        <joint name="r2/right_arm/hand/ringlittle/littleDistal" value="1" />
         <joint name="r2/right_arm/hand/middle/yaw" value="0" />
         <joint name="r2/right_arm/hand/middle/proximal" value="1" />
         <joint name="r2/right_arm/hand/middle/medial" value="1" />
-        <joint name="r2/right_arm/hand/middle/distal" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/ring" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/ringMedial" value="1" />
-        <joint name="r2/right_arm/hand/ringlittle/ringDistal" value="1" />
         <joint name="r2/right_arm/hand/thumb/roll" value="1.2217" />
         <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/right_arm/hand/thumb/medial" value="1" />
@@ -206,17 +172,13 @@
         <joint name="r2/right_arm/hand/index/yaw" value="0" />
         <joint name="r2/right_arm/hand/index/proximal" value="0" />
         <joint name="r2/right_arm/hand/index/medial" value="0" />
-        <joint name="r2/right_arm/hand/index/distal" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/little" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/littleMedial" value="0" />
-        <joint name="r2/right_arm/hand/ringlittle/littleDistal" value="0" />
         <joint name="r2/right_arm/hand/middle/yaw" value="0" />
         <joint name="r2/right_arm/hand/middle/proximal" value="0" />
         <joint name="r2/right_arm/hand/middle/medial" value="0" />
-        <joint name="r2/right_arm/hand/middle/distal" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/ring" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/ringMedial" value="0" />
-        <joint name="r2/right_arm/hand/ringlittle/ringDistal" value="0" />
         <joint name="r2/right_arm/hand/thumb/roll" value="0" />
         <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/right_arm/hand/thumb/medial" value="0" />
@@ -226,17 +188,13 @@
         <joint name="r2/left_arm/hand/index/yaw" value="0" />
         <joint name="r2/left_arm/hand/index/proximal" value="0" />
         <joint name="r2/left_arm/hand/index/medial" value="0" />
-        <joint name="r2/left_arm/hand/index/distal" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/little" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/littleMedial" value="0" />
-        <joint name="r2/left_arm/hand/ringlittle/littleDistal" value="0" />
         <joint name="r2/left_arm/hand/middle/yaw" value="0" />
         <joint name="r2/left_arm/hand/middle/proximal" value="0" />
         <joint name="r2/left_arm/hand/middle/medial" value="0" />
-        <joint name="r2/left_arm/hand/middle/distal" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/ring" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/ringMedial" value="0" />
-        <joint name="r2/left_arm/hand/ringlittle/ringDistal" value="0" />
         <joint name="r2/left_arm/hand/thumb/roll" value="0" />
         <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/left_arm/hand/thumb/medial" value="0" />
@@ -246,17 +204,13 @@
         <joint name="r2/left_arm/hand/index/yaw" value="0" />
         <joint name="r2/left_arm/hand/index/proximal" value="0" />
         <joint name="r2/left_arm/hand/index/medial" value="0" />
-        <joint name="r2/left_arm/hand/index/distal" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/little" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/littleMedial" value="0" />
-        <joint name="r2/left_arm/hand/ringlittle/littleDistal" value="0" />
         <joint name="r2/left_arm/hand/middle/yaw" value="0" />
         <joint name="r2/left_arm/hand/middle/proximal" value="0" />
         <joint name="r2/left_arm/hand/middle/medial" value="0" />
-        <joint name="r2/left_arm/hand/middle/distal" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/ring" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/ringMedial" value="0" />
-        <joint name="r2/left_arm/hand/ringlittle/ringDistal" value="0" />
         <joint name="r2/left_arm/hand/thumb/roll" value="-1.2217" />
         <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/left_arm/hand/thumb/medial" value="0" />
@@ -266,17 +220,13 @@
         <joint name="r2/right_arm/hand/index/yaw" value="0" />
         <joint name="r2/right_arm/hand/index/proximal" value="0" />
         <joint name="r2/right_arm/hand/index/medial" value="0" />
-        <joint name="r2/right_arm/hand/index/distal" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/little" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/littleMedial" value="0" />
-        <joint name="r2/right_arm/hand/ringlittle/littleDistal" value="0" />
         <joint name="r2/right_arm/hand/middle/yaw" value="0" />
         <joint name="r2/right_arm/hand/middle/proximal" value="0" />
         <joint name="r2/right_arm/hand/middle/medial" value="0" />
-        <joint name="r2/right_arm/hand/middle/distal" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/ring" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/ringMedial" value="0" />
-        <joint name="r2/right_arm/hand/ringlittle/ringDistal" value="0" />
         <joint name="r2/right_arm/hand/thumb/roll" value="1.2217" />
         <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/right_arm/hand/thumb/medial" value="0" />
@@ -286,17 +236,13 @@
         <joint name="r2/left_arm/hand/index/yaw" value="0" />
         <joint name="r2/left_arm/hand/index/proximal" value="0" />
         <joint name="r2/left_arm/hand/index/medial" value="0" />
-        <joint name="r2/left_arm/hand/index/distal" value="0" />
         <joint name="r2/left_arm/hand/ringlittle/little" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/littleMedial" value="1" />
-        <joint name="r2/left_arm/hand/ringlittle/littleDistal" value="1" />
         <joint name="r2/left_arm/hand/middle/yaw" value="0" />
         <joint name="r2/left_arm/hand/middle/proximal" value="1" />
         <joint name="r2/left_arm/hand/middle/medial" value="1" />
-        <joint name="r2/left_arm/hand/middle/distal" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/ring" value="1" />
         <joint name="r2/left_arm/hand/ringlittle/ringMedial" value="1" />
-        <joint name="r2/left_arm/hand/ringlittle/ringDistal" value="1" />
         <joint name="r2/left_arm/hand/thumb/roll" value="-1.2217" />
         <joint name="r2/left_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/left_arm/hand/thumb/medial" value="1" />
@@ -306,17 +252,13 @@
         <joint name="r2/right_arm/hand/index/yaw" value="0" />
         <joint name="r2/right_arm/hand/index/proximal" value="0" />
         <joint name="r2/right_arm/hand/index/medial" value="0" />
-        <joint name="r2/right_arm/hand/index/distal" value="0" />
         <joint name="r2/right_arm/hand/ringlittle/little" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/littleMedial" value="1" />
-        <joint name="r2/right_arm/hand/ringlittle/littleDistal" value="1" />
         <joint name="r2/right_arm/hand/middle/yaw" value="0" />
         <joint name="r2/right_arm/hand/middle/proximal" value="1" />
         <joint name="r2/right_arm/hand/middle/medial" value="1" />
-        <joint name="r2/right_arm/hand/middle/distal" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/ring" value="1" />
         <joint name="r2/right_arm/hand/ringlittle/ringMedial" value="1" />
-        <joint name="r2/right_arm/hand/ringlittle/ringDistal" value="1" />
         <joint name="r2/right_arm/hand/thumb/roll" value="1.2217" />
         <joint name="r2/right_arm/hand/thumb/proximal" value="0" />
         <joint name="r2/right_arm/hand/thumb/medial" value="1" />
