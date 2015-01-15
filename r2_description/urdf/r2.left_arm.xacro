@@ -95,7 +95,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Left_Upper_Arm.dae" scale="0.8 0.8 0.8"/>
+        <mesh filename="package://r2_description/meshes/Left_Upper_Arm.dae" />
       </geometry>
       <origin rpy="0 0 3.14" xyz="0 0 .1016"/>
     </collision>

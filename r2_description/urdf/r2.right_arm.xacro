@@ -150,8 +150,8 @@
       <geometry>
         <mesh filename="package://r2_description/meshes/Right_Forearm.dae"/>
       </geometry>
+	  <origin xyz="0 0 0.1"/>
       <material name="dirty_white"/>
-      <origin xyz="0 0 0.1"/>
     </visual>
     <collision>
       <geometry>
@@ -203,7 +203,7 @@
   <joint name="${robot_name}fixed/right_wrist_yaw/right_palm" type="fixed">
     <parent link="${robot_name}right_wrist_yaw"/>
     <child link="${robot_name}right_palm"/>
-    <origin rpy=" 0.0 -0.0 0.0299" xyz=" 0.0 0.0 0.0"/>
+    <origin rpy=" 0.0 -0.0 0.014" xyz=" 0.0 0.0 0.0"/>
   </joint>
 
   <link name="${robot_name}right_palm">
@@ -220,6 +220,7 @@
       <origin xyz="0.0 0.0 -0.0" rpy="3.14 0 1.57"/>
     </collision>
     <inertial>
+		<origin xyz="0.067564   -0.0253746   -0.00090932"/>
         <mass value="1.1"/>
         <inertia ixx="0.1"  ixy="0.0"  ixz="0.0"  iyy="0.1"  iyz="0.0"  izz="0.1"/>
     </inertial>

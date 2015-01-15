@@ -45,7 +45,7 @@
 <joint name="${robot_name}right_arm/hand/thumb/roll" type="revolute">
     <parent link="${robot_name}right_wrist_yaw"/>
     <child link="${robot_name}right_thumb_base"/>
-    <origin xyz="0.03302 -0.03048 0.00635 " rpy=" 1.57079632679 0.174532791018 -1.30899687745 " />
+    <origin xyz="0.03302 -0.03048 0.00635 " rpy=" 1.57079632679 0.0 -1.30899687745 " />
     <axis xyz="0 0 1"/>
     <limit effort="10000000.0" lower="0.0" upper="1.2217" velocity="1000"/>
     <dynamics damping="${right_arm_hand_thumb_j0_damping}" friction="${right_arm_hand_thumb_j0_friction}"/>
@@ -94,7 +94,7 @@
   <joint name="${robot_name}right_arm/hand/ringlittle/little" type="revolute">
     <parent link="${robot_name}right_wrist_yaw"/>
     <child link="${robot_name}right_little_proximal"/>
-    <origin xyz=" 0.094635701 0.0403792436 -0.0060878212 " rpy=" 1.53588943985 -0.0872667473393 0.17453258148  " />
+    <origin xyz=" 0.094635701 0.0403792436 -0.0060878212 " rpy=" 1.60570321374 -0.0872667473393 0.17453258148  " />
     <axis xyz="0 0 1"/>
     <limit effort="10000000.0" lower="0" upper="2.9671" velocity="1000"/>
     <dynamics damping="${right_arm_hand_little_j0_damping}" friction="${right_arm_hand_little_j0_friction}"/>
@@ -115,7 +115,7 @@
 
   <link name="${robot_name}right_thumb_proximal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -143,7 +143,7 @@
 
   <link name="${robot_name}right_thumb_medial_prime">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -171,7 +171,7 @@
 
   <link name="${robot_name}right_thumb_medial">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -199,7 +199,7 @@
 
   <link name="${robot_name}right_thumb_distal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -224,7 +224,7 @@
 
   <link name="${robot_name}right_thumb_tip">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
@@ -238,7 +238,7 @@
 
   <link name="${robot_name}right_index_yaw">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
@@ -254,7 +254,7 @@
 
   <link name="${robot_name}right_index_proximal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -282,7 +282,7 @@
 
   <link name="${robot_name}right_index_medial">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -310,7 +310,7 @@
 
   <link name="${robot_name}right_index_distal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -335,7 +335,7 @@
 
   <link name="${robot_name}right_index_tip">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
@@ -365,7 +365,7 @@
 
   <link name="${robot_name}right_middle_proximal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -376,7 +376,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
     </collision>
@@ -393,7 +393,7 @@
 
   <link name="${robot_name}right_middle_medial">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -404,7 +404,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
@@ -421,7 +421,7 @@
 
   <link name="${robot_name}right_middle_distal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -432,7 +432,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
@@ -446,14 +446,14 @@
 
   <link name="${robot_name}right_middle_tip">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
   
   <link name="${robot_name}right_ring_proximal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -464,7 +464,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
     </collision>
@@ -481,7 +481,7 @@
 
   <link name="${robot_name}right_ring_medial">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -492,7 +492,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
@@ -509,7 +509,7 @@
 
   <link name="${robot_name}right_ring_distal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -520,7 +520,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
@@ -534,14 +534,14 @@
 
   <link name="${robot_name}right_ring_tip">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
 
   <link name="${robot_name}right_little_proximal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -552,7 +552,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
     </collision>
@@ -569,7 +569,7 @@
 
   <link name="${robot_name}right_little_medial">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -580,7 +580,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
@@ -597,7 +597,7 @@
 
   <link name="${robot_name}right_little_distal">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
     <visual>
@@ -608,7 +608,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae" scale="0.9 0.9 0.9"/>
+        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
@@ -622,7 +622,7 @@
 
   <link name="${robot_name}right_little_tip">
     <inertial>
-      <mass value=".05"/>
+      <mass value=".001"/>
       <inertia ixx=".0010" ixy="0.0" ixz="0.0" iyy=".0010" iyz="0.0" izz=".0010"/>
     </inertial>
   </link>
