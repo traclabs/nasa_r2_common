@@ -8,7 +8,7 @@ Panels:
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.74256
-    Tree Height: 931
+    Tree Height: 837
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -16,6 +16,8 @@ Panels:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
+  - Class: rviz_affordance_template_panel/RVizAffordanceTemplatePanel
+    Name: RVizAffordanceTemplatePanel
 Visualization Manager:
   Class: ""
   Displays:
@@ -39,7 +41,9 @@ Visualization Manager:
       Value: true
     - Class: moveit_rviz_plugin/MotionPlanning
       Enabled: false
+      Move Group Namespace: ""
       MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
       MoveIt_Planning_Time: 5
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
@@ -738,7 +742,7 @@ Visualization Manager:
       Marker Topic: /r2/move_group/planned_path_visualization
       Name: Path Visualization Markers
       Namespaces:
-        r2: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Camera
@@ -757,7 +761,6 @@ Visualization Manager:
         Left Foot Camera Image: true
         Left Foot CbN Intensity: true
         Left Foot CbN Points: true
-        Left Head Camera: true
         MotionPlanning: true
         OccupancyMap: true
         Path Visualization Markers: true
@@ -768,6 +771,7 @@ Visualization Manager:
         Right Head Camera: true
         RobotModel: true
         Value: true
+        affordance templates: true
       Zoom Factor: 1
     - Class: rviz/Camera
       Enabled: false
@@ -793,19 +797,19 @@ Visualization Manager:
         Right Foot Camera Image: true
         Right Foot CbN Intensity: true
         Right Foot CbN Points: true
-        Right Head Camera: true
         RobotModel: true
         Value: true
+        affordance templates: true
       Zoom Factor: 1
     - Class: rviz/Camera
-      Enabled: true
+      Enabled: false
       Image Rendering: background and overlay
       Image Topic: /r2/asus/rgb/image_raw
       Name: Asus Camera
       Overlay Alpha: 0.5
       Queue Size: 2
       Transport Hint: raw
-      Value: true
+      Value: false
       Visibility:
         Asus Point Cloud: true
         Grid: true
@@ -823,12 +827,13 @@ Visualization Manager:
         Right Head Camera: true
         RobotModel: true
         Value: true
+        affordance templates: true
       Zoom Factor: 1
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.77949
-        Min Value: 0.00142837
+        Max Value: 1.21909
+        Min Value: -0.00090313
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -836,7 +841,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: AxisColor
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Max Intensity: 4096
@@ -852,7 +857,7 @@ Visualization Manager:
       Topic: /r2/asus/depth/points
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -865,7 +870,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: AxisColor
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Max Intensity: 4096
@@ -881,12 +886,12 @@ Visualization Manager:
       Topic: /r2/left_foot_camboard/depth/points
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.00024125
-        Min Value: -0.000530362
+        Max Value: 0.000277668
+        Min Value: -0.00051412
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -894,7 +899,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: AxisColor
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Max Intensity: 4096
@@ -910,7 +915,7 @@ Visualization Manager:
       Topic: /r2/right_foot_camboard/depth/points
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Class: rviz/Image
       Enabled: false
       Image Topic: /r2/left_foot_camboard/depth/image_raw
@@ -959,10 +964,19 @@ Visualization Manager:
       Class: octomap_rviz_plugin/OccupancyMap
       Color Scheme: map
       Draw Behind: false
-      Enabled: true
+      Enabled: false
       Max. Octree Depth: 16
       Name: OccupancyMap
       Octomap Binary Topic: ""
+      Value: false
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: true
+      Name: affordance templates
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: /affordance_template_server/update
       Value: true
   Enabled: true
   Global Options:
@@ -979,29 +993,29 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.14948
+      Distance: 3.83775
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.283003
-        Y: 0.504652
-        Z: 0.916592
+        X: 0.188716
+        Y: 0.667299
+        Z: 1.06722
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.295203
+      Pitch: 0.415203
       Target Frame: world
       Value: Orbit (rviz)
-      Yaw: 0.291309
+      Yaw: 5.6445
     Saved: ~
 Window Geometry:
   Asus Camera:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1171
+  Height: 1056
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -1014,7 +1028,9 @@ Window Geometry:
     collapsed: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000027d00000438fc020000000cfb000000160041007300750073002000430061006d0065007200610300000356000001890000034200000299fb000000100044006900730070006c006100790073010000003f00000438000000e900fffffffb0000000800480065006c00700000000342000000bb0000007c00fffffffb0000000a0056006900650077007300000003a5000000b6000000b600fffffffb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006700000002480000016b0000016b00fffffffb0000000c00430061006d0065007200610100000356000001210000000000000000fb0000002e004c00650066007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000025e000001420000001600fffffffb000000300052006900670068007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000034a0000012d0000001600fffffffb0000002e0052006900670068007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000002f9000000d10000001600fffffffb0000002c004c00650066007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000003a6000000d10000001600fffffffb00000020004c00650066007400200048006500610064002000430061006d00650072006102000000b000000072000002aa00000289fb000000220052006900670068007400200048006500610064002000430061006d006500720061020000035a00000072000002a700000289000004fb0000043800000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000002000000000000011b000003dafc020000000cfb000000160041007300750073002000430061006d0065007200610200000356000001890000034200000299fb000000100044006900730070006c0061007900730100000028000003da000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003a5000000b6000000b000fffffffb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006700000002480000016b000001ab00fffffffb0000000c00430061006d0065007200610100000356000001210000000000000000fb0000002e004c00650066007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000025e000001420000001600fffffffb000000300052006900670068007400200046006f006f0074002000430062004e00200049006e00740065006e0073006900740079000000034a0000012d0000001600fffffffb0000002e0052006900670068007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000002f9000000d10000001600fffffffb0000002c004c00650066007400200046006f006f0074002000430061006d00650072006100200049006d00610067006500000003a6000000d10000001600fffffffb00000020004c00650066007400200048006500610064002000430061006d00650072006102000000b000000072000002aa00000289fb000000220052006900670068007400200048006500610064002000430061006d006500720061020000035a00000072000002a7000002890000000100000196000003dafc0200000001fb00000036005200560069007a004100660066006f007200640061006e0063006500540065006d0070006c00610074006500500061006e0065006c0100000028000003da0000033400ffffff00000482000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  RVizAffordanceTemplatePanel:
+    collapsed: false
   Right Foot Camera Image:
     collapsed: false
   Right Foot CbN Intensity:
@@ -1023,6 +1039,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1918
-  X: 1911
-  Y: -8
+  Width: 1855
+  X: 65
+  Y: 24
