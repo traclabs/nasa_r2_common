@@ -1,0 +1,14 @@
+uint16 states
+uint16 dac0Status
+float64 fiveVolt
+float64 threeP3Volt
+float64 twoP438Volt
+float64 current
+float64 voltage
+float64[] temp
+float64 tempLimit
+float64 ccCurrent
+float64 cvVoltage
+float64 startVoltage
+float64 cvCutoffCurrent
+float64 beginChargeBelowVoltage

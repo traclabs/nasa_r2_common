@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <name>nasa_r2_common_msgs</name>
+  <version>1.1.0</version>
+  <description>The nasa_r2_common_msgs package</description>
+
+  <maintainer email="dustin.r.gooding@nasa.gov">Dustin Gooding</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>nasa_cmake</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>trajectory_msgs</build_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+
+  <export>
+  </export>
+</package>

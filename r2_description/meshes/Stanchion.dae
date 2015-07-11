@@ -17,7 +17,7 @@
     </contributor>
     <created>2012-06-20T12:23:56</created>
     <modified>2012-06-20T12:23:56</modified>
-    <unit name="meter" meter="1.00"/>
+    <unit name="meter" meter="1.0"/>
     <up_axis>Y_UP</up_axis>
   </asset>
   <library_materials>
@@ -890,7 +890,7 @@
   </library_effects>
   <library_images>
     <image id="material_9F" name="material_9F">
-      <init_from>R2_Stanchion_10_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_10_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -900,7 +900,7 @@
       </extra>
     </image>
     <image id="material_11F" name="material_11F">
-      <init_from>R2_Stanchion_11_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_11_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -910,7 +910,7 @@
       </extra>
     </image>
     <image id="material_3F" name="material_3F">
-      <init_from>R2_Stanchion_12_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_12_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -920,7 +920,7 @@
       </extra>
     </image>
     <image id="material_21F" name="material_21F">
-      <init_from>R2_Stanchion_2_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_2_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -930,7 +930,7 @@
       </extra>
     </image>
     <image id="material_1F" name="material_1F">
-      <init_from>R2_Stanchion_3_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_3_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -940,7 +940,7 @@
       </extra>
     </image>
     <image id="material_15F" name="material_15F">
-      <init_from>R2_Stanchion_4_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_4_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -950,7 +950,7 @@
       </extra>
     </image>
     <image id="material_13F" name="material_13F">
-      <init_from>R2_Stanchion_5_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_5_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -960,7 +960,7 @@
       </extra>
     </image>
     <image id="material_19F" name="material_19F">
-      <init_from>R2_Stanchion_6_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_6_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -970,7 +970,7 @@
       </extra>
     </image>
     <image id="material_17F" name="material_17F">
-      <init_from>R2_Stanchion_7_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_7_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -980,7 +980,7 @@
       </extra>
     </image>
     <image id="material_5F" name="material_5F">
-      <init_from>R2_Stanchion_8_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_8_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -990,7 +990,7 @@
       </extra>
     </image>
     <image id="material_7F" name="material_7F">
-      <init_from>R2_Stanchion_9_Col_256.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_9_Col_256.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>
@@ -1000,7 +1000,7 @@
       </extra>
     </image>
     <image id="material_23F" name="material_23F">
-      <init_from>R2_Stanchion_Col_512_Proj.jpg</init_from>
+      <init_from>../materials/textures/R2_Stanchion_Col_512_Proj.jpg</init_from>
       <extra>
         <technique profile="OpenCOLLADAMaya">
           <dgnode_type>kFile</dgnode_type>

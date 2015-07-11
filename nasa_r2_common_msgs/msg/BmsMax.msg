@@ -1,0 +1,10 @@
+uint16 errors127
+uint16 errors1238
+uint16 errors
+uint16 status
+uint16 count
+uint16 enableMax1238
+uint16 createAlarm
+uint16 thermistorBias
+uint16 sampleDelay
+uint16 tempDelay

@@ -1,0 +1,6 @@
+byte PUSH_RED=0
+byte PULL_RED=1
+byte CLICK_GREEN=2
+byte action
+---
+bool status

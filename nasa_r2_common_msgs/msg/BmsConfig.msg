@@ -1,0 +1,14 @@
+uint16 boardId
+uint16 versionId
+uint32 hashTag
+uint16 softwareVersion
+uint32 softwareHashTag
+uint16 numSlaveCards
+uint16 numVoltCells
+uint16 numTempCells
+BmsLimit cellVolt
+BmsLimit stackVolt
+BmsLimit chargeCurrent
+BmsLimit loadCurrent
+BmsLimit cellTemp
+BmsLimit masterTemp

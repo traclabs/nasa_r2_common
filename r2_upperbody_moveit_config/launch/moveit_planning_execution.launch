@@ -1,0 +1,9 @@
+<launch>
+ <include file="$(find r2_upperbody_moveit_config)/launch/r2_moveit_controller_manager.launch" ns="move_group"/>
+ <include file="$(find r2_upperbody_moveit_config)/launch/move_group.launch">
+  <arg name="publish_monitored_planning_scene" value="true" />
+ </include>
+ <include file="$(find r2_upperbody_moveit_config)/launch/moveit_rviz.launch">
+  <arg name="config" value="true"/>
+ </include>
+</launch>

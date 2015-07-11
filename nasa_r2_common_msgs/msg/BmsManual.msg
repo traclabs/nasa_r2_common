@@ -1,0 +1,15 @@
+uint16 controlStatus
+uint16 bmsSensorDiscreteIn
+uint16[] bmsSensorDiscreteOut
+uint16 armFireDebug
+uint16 manualChargingEnable
+uint16 armFireCharging
+uint16 manualBalancingEnable
+uint16 armFireBalancingEnable
+float64 chargerDac0VoltControl
+uint16 cortexResetInhibitControl
+uint16[] slaveCellsBalance
+uint16[] mlvdsControlDiscreteOut
+uint16 mosfetClearFaults
+uint16 limitStatusFlagClear
+uint16 cortexResetInhibitStatus

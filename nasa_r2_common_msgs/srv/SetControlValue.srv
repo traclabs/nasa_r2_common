@@ -1,0 +1,12 @@
+string node
+uint8 property
+uint16 value
+
+uint8 Flea3Enable       = 0
+uint8 CBNEnable         = 1
+uint8 Led2Enable        = 2
+uint8 HeadLight         = 3
+---
+bool success
+string info
+

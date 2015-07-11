@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot>
+  <link name="world"/>
+
+<!--  transforms in first joint don't seem to work properly-->
+  <joint name="${robot_name}fixed/world/world_ref" type="fixed">
+    <parent link="world"/>
+    <child link="${robot_name}world_ref"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+  </joint>
+
+  <non_visual_link name="${robot_name}world_ref"/>
+
+  <non_visual_link name="${robot_name}robot_world"/>
+  
+  <joint name="${robot_name}fixed/robot_world/robot_base" type="fixed">
+    <parent link="${robot_name}robot_world"/>
+    <child link="${robot_name}robot_base"/>
+    <origin rpy="0.0 3.14159 3.14159" xyz="0.0 0.0 0.0"/>
+  </joint>
+
+  <non_visual_link name="${robot_name}robot_base"/>   
+
+</robot>

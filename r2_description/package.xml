@@ -1,11 +1,16 @@
 <?xml version="1.0"?>
 <package>
   <name>r2_description</name>
-  <version>1.0.0</version>
-  <description>URDF/Meshes/Models for Robonaut2</description>
-  <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
-  <maintainer email="stephen.hart@nasa.gov">Stephen Hart</maintainer>
+  <version>1.1.0</version>
+  <description>This package contains the robot model files (urdf and xacro)</description>
+
+  <maintainer email="allison.thackston@nasa.gov">Allison Thackston</maintainer>
+
   <license>BSD</license>
-  <url type="website">http://ros.org/wiki/r2_description</url>
+
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>xacro</build_depend>
+
+  <export>
+  </export>
 </package>
