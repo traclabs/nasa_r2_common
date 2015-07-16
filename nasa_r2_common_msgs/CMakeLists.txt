@@ -122,7 +122,7 @@ generate_messages(DEPENDENCIES std_msgs visualization_msgs geometry_msgs traject
 
 catkin_package(
   INCLUDE_DIRS include ${PROTOGEN_INCLUDE_DIRS}
-  LIBRARIES ${PROJECT_NAME} ${PROJECT_NAME}_proto
+  LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS message_runtime std_msgs visualization_msgs geometry_msgs trajectory_msgs
 )
 
