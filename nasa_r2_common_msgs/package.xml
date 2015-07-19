@@ -5,8 +5,12 @@
   <description>The nasa_r2_common_msgs package</description>
 
   <maintainer email="dustin.r.gooding@nasa.gov">Dustin Gooding</maintainer>
-
+  <maintainer email="allison.thackston@nasa.gov">Allison Thackston</maintainer>
   <license>BSD</license>
+  
+  <author>Allison Thackston</author>
+  <author>Paul Dinh</author>
+  <author>Jennifer Turner</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>nasa_cmake</build_depend>
