@@ -10,12 +10,27 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="left_arm">
-        <chain base_link="r2/waist_center" tip_link="r2/left_palm" />
+        <joint name="r2/left_arm/joint0"/>
+        <joint name="r2/left_arm/joint1"/>
+        <joint name="r2/left_arm/joint2"/>
+        <joint name="r2/left_arm/joint3"/>
+        <joint name="r2/left_arm/joint4"/>
+        <joint name="r2/left_arm/joint5"/>
+        <joint name="r2/left_arm/joint6"/>
+        <chain base_link="r2/chest_center" tip_link="r2/left_palm" />
     </group>
     <group name="right_arm">
-        <chain base_link="r2/waist_center" tip_link="r2/right_palm" />
+        <joint name="r2/right_arm/joint0"/>
+        <joint name="r2/right_arm/joint1"/>
+        <joint name="r2/right_arm/joint2"/>
+        <joint name="r2/right_arm/joint3"/>
+        <joint name="r2/right_arm/joint4"/>
+        <joint name="r2/right_arm/joint5"/>
+        <joint name="r2/right_arm/joint6"/>
+        <chain base_link="r2/chest_center" tip_link="r2/right_palm" />
     </group>
     <group name="left_hand">
+        <link name="r2/left_palm" />
         <link name="r2/left_index_base" />
         <link name="r2/left_index_yaw" />
         <link name="r2/left_index_proximal" />
@@ -26,7 +41,6 @@
         <link name="r2/left_middle_proximal" />
         <link name="r2/left_middle_medial" />
         <link name="r2/left_middle_tip" />
-        <link name="r2/left_palm" />
         <link name="r2/left_little_proximal" />
         <link name="r2/left_little_tip" />
         <link name="r2/left_ring_proximal" />
@@ -39,6 +53,7 @@
         <link name="r2/left_thumb_tip" />
     </group>
     <group name="right_hand">
+        <link name="r2/right_palm" />
         <link name="r2/right_index_base" />
         <link name="r2/right_index_yaw" />
         <link name="r2/right_index_proximal" />
@@ -49,7 +64,6 @@
         <link name="r2/right_middle_proximal" />
         <link name="r2/right_middle_medial" />
         <link name="r2/right_middle_tip" />
-        <link name="r2/right_palm" />
         <link name="r2/right_little_proximal" />
         <link name="r2/right_little_tip" />
         <link name="r2/right_ring_proximal" />
