@@ -1,0 +1,13 @@
+joints:
+  - r2/right_arm/hand/index/yaw
+  - r2/right_arm/hand/index/proximal
+  - r2/right_arm/hand/index/medial
+  - r2/right_arm/hand/middle/yaw
+  - r2/right_arm/hand/middle/proximal
+  - r2/right_arm/hand/middle/medial
+  - r2/right_arm/hand/ringlittle/little
+  - r2/right_arm/hand/ringlittle/ring
+  - r2/right_arm/hand/thumb/roll
+  - r2/right_arm/hand/thumb/proximal
+  - r2/right_arm/hand/thumb/medial
+  - r2/right_arm/hand/thumb/distal

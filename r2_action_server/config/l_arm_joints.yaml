@@ -1,0 +1,8 @@
+joints:
+  - r2/left_arm/joint0
+  - r2/left_arm/joint1
+  - r2/left_arm/joint2
+  - r2/left_arm/joint3
+  - r2/left_arm/joint4
+  - r2/left_arm/wrist/pitch
+  - r2/left_arm/wrist/yaw
