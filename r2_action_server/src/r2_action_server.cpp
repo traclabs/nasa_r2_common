@@ -95,15 +95,18 @@ public:
     }
     pn.param("constraints/stopped_velocity_tolerance", stopped_velocity_tolerance_, 0.01);
 
-    pub_controller_command_ = node_.advertise<trajectory_msgs::JointTrajectory>("command", 1);
+    pub_controller_command_ = node_.advertise<trajectory_msgs::JointTrajectory>("/robodyn/joint_traj", 1);
+    //pub_controller_command_ = node_.advertise<trajectory_msgs::JointTrajectory>("command", 1);
 //    sub_controller_state_ = node_.subscribe("state", 1, &JointTrajectoryExecuter::controllerStateCB, this);
 
     watchdog_timer_ = node_.createTimer(ros::Duration(1.0), &JointTrajectoryExecuter::watchdog, this);
 
+    bool first = true;
     ros::Time started_waiting_for_controller = ros::Time::now();
     //while (ros::ok() && !last_controller_state_)
-    while (ros::ok())
+    while (ros::ok() && !first)
     {
+      first = false;
       ros::spinOnce();
       if (started_waiting_for_controller != ros::Time(0) &&
           ros::Time::now() > started_waiting_for_controller + ros::Duration(30.0))
@@ -114,6 +117,7 @@ public:
       ros::Duration(0.1).sleep();
     }
 
+    ROS_WARN("Starting action server.");
     action_server_.start();
   }
 

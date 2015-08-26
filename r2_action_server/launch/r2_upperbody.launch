@@ -1,12 +1,32 @@
 <?xml version="1.0"?>
 <launch>
   
-  <node ns="r2" name="l_arm_controller" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+  <node ns="r2/neck_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+    <rosparam command="load" file="$(find r2_action_server)/config/head_joints.yaml"/>
+  </node>
+
+  <node ns="r2/waist_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+    <rosparam command="load" file="$(find r2_action_server)/config/waist_joints.yaml"/>
+  </node>
+
+  <node ns="r2/l_arm_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
     <rosparam command="load" file="$(find r2_action_server)/config/l_arm_joints.yaml"/>
   </node>
+
+  <node ns="r2/r_arm_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+    <rosparam command="load" file="$(find r2_action_server)/config/r_arm_joints.yaml"/>
+  </node>
+
+  <node ns="r2/l_hand_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+    <rosparam command="load" file="$(find r2_action_server)/config/l_hand_joints.yaml"/>
+  </node>
+
+  <node ns="r2/r_hand_controller" name="r2_action_server" pkg="r2_action_server" type="r2_action_server" respawn="false" output="screen">
+    <rosparam command="load" file="$(find r2_action_server)/config/r_hand_joints.yaml"/>
+  </node>
+
 
 </launch>
 
 
 
-<!-- rosparam get /r_arm_controller/joint_trajectory_action/joints -->
