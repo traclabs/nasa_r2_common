@@ -19,10 +19,10 @@ foreach(it ${urdf_xacro_files})
   get_filename_component(basepath ${it} PATH)
   get_filename_component(basename ${it} NAME_WE)
 
-  message(" processing urdf file :"${basepath}/${basename})
+  message(" processing urdf file :${basepath}/${basename}")
 
   set(expanded_file "${CMAKE_CURRENT_SOURCE_DIR}/urdf/${basename}.urdf")
-  message("   produce expanded file :"${expanded_file})
+  message("   produce expanded file :${expanded_file}")
 
   xacro_add_xacro_file(${it} ${expanded_file})
   
