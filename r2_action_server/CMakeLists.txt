@@ -85,7 +85,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-   INCLUDE_DIRS include
+   INCLUDE_DIRS
 #  LIBRARIES r2_action_server
    CATKIN_DEPENDS actionlib actionlib_msgs control_msgs roscpp rospy sensor_msgs std_msgs trajectory_msgs
 #  DEPENDS system_lib
