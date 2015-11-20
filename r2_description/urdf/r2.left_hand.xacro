@@ -1,45 +1,45 @@
 <?xml version="1.0"?>
 <robot>
 
-  <property name="left_arm_hand_thumb_j0_damping" value= "0.1" />
+  <property name="left_arm_hand_thumb_j0_damping" value= "0.5" />
   <property name="left_arm_hand_thumb_j0_friction" value= "0.0" />
-  <property name="left_arm_hand_thumb_j1_damping" value= "0.1" />
+  <property name="left_arm_hand_thumb_j1_damping" value= "0.5" />
   <property name="left_arm_hand_thumb_j1_friction" value= "0.0" />
-  <property name="left_arm_hand_thumb_j2_damping" value= "0.1" />
+  <property name="left_arm_hand_thumb_j2_damping" value= "0.5" />
   <property name="left_arm_hand_thumb_j2_friction" value= "0.0" />
-  <property name="left_arm_hand_thumb_j3_damping" value= "0.1" />
+  <property name="left_arm_hand_thumb_j3_damping" value= "0.5" />
   <property name="left_arm_hand_thumb_j3_friction" value= "0.0" />
 
-  <property name="left_arm_hand_index_j0_damping" value= "0.1" />
+  <property name="left_arm_hand_index_j0_damping" value= "0.5" />
   <property name="left_arm_hand_index_j0_friction" value= "0.0" />
-  <property name="left_arm_hand_index_j1_damping" value= "0.1" />
+  <property name="left_arm_hand_index_j1_damping" value= "0.5" />
   <property name="left_arm_hand_index_j1_friction" value= "0.0" />
-  <property name="left_arm_hand_index_j2_damping" value= "0.1" />
+  <property name="left_arm_hand_index_j2_damping" value= "0.5" />
   <property name="left_arm_hand_index_j2_friction" value= "0.0" />
-  <property name="left_arm_hand_index_j3_damping" value= "0.1" />
+  <property name="left_arm_hand_index_j3_damping" value= "0.5" />
   <property name="left_arm_hand_index_j3_friction" value= "0.0" />
 
-  <property name="left_arm_hand_middle_j0_damping" value= "0.1" />
+  <property name="left_arm_hand_middle_j0_damping" value= "0.5" />
   <property name="left_arm_hand_middle_j0_friction" value= "0.0" />
-  <property name="left_arm_hand_middle_j1_damping" value= "0.1" />
+  <property name="left_arm_hand_middle_j1_damping" value= "0.5" />
   <property name="left_arm_hand_middle_j1_friction" value= "0.0" />
-  <property name="left_arm_hand_middle_j2_damping" value= "0.1" />
+  <property name="left_arm_hand_middle_j2_damping" value= "0.5" />
   <property name="left_arm_hand_middle_j2_friction" value= "0.0" />
-  <property name="left_arm_hand_middle_j3_damping" value= "0.1" />
+  <property name="left_arm_hand_middle_j3_damping" value= "0.5" />
   <property name="left_arm_hand_middle_j3_friction" value= "0.0" />
 
-  <property name="left_arm_hand_ring_j0_damping" value= "0.1" />
+  <property name="left_arm_hand_ring_j0_damping" value= "0.5" />
   <property name="left_arm_hand_ring_j0_friction" value= "0.0" />
-  <property name="left_arm_hand_ring_j1_damping" value= "0.1" />
+  <property name="left_arm_hand_ring_j1_damping" value= "0.5" />
   <property name="left_arm_hand_ring_j1_friction" value= "0.0" />
-  <property name="left_arm_hand_ring_j2_damping" value= "0.1" />
+  <property name="left_arm_hand_ring_j2_damping" value= "0.5" />
   <property name="left_arm_hand_ring_j2_friction" value= "0.0" />
 
-  <property name="left_arm_hand_little_j0_damping" value= "0.1" />
+  <property name="left_arm_hand_little_j0_damping" value= "0.5" />
   <property name="left_arm_hand_little_j0_friction" value= "0.0" />
-  <property name="left_arm_hand_little_j1_damping" value= "0.1" />
+  <property name="left_arm_hand_little_j1_damping" value= "0.5" />
   <property name="left_arm_hand_little_j1_friction" value= "0.0" />
-  <property name="left_arm_hand_little_j2_damping" value= "0.1" />
+  <property name="left_arm_hand_little_j2_damping" value= "0.5" />
   <property name="left_arm_hand_little_j2_friction" value= "0.0" />
 
   <joint name="${robot_name}left_arm/hand/thumb/joint0" type="revolute">
@@ -123,12 +123,12 @@
       </geometry>
       <origin xyz="-0.01 0.0 0.0" rpy="-1.57 0 0"/>
     </visual>
-    <collision>
+   <!--  <collision>
       <geometry>
         <mesh filename="package://r2_description/meshes/Left_Thumb_Carp.dae"/>
       </geometry>
       <origin xyz="-0.01 0.0 0.0" rpy="-1.57 0 0"/>
-    </collision>
+    </collision> -->
   </link>
   
   <joint name="${robot_name}left_arm/hand/thumb/joint1" type="revolute">
@@ -153,9 +153,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Left_Thumb_MtCar.dae"/>
+ <!--        <mesh filename="package://r2_description/meshes/Left_Thumb_MtCar.dae"/> -->
+        <box size="0.01 0.02 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="-1.57 -1.57 0"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="-1.57 -1.57 0"/> -->
+      <origin xyz="0.02 0.0 0.0" rpy="-1.57 -1.57 0"/>
     </collision>
   </link>
   
@@ -181,9 +183,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Thumb_Proximal.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Thumb_Proximal.dae"/> -->
+          <box size="0.01 0.03 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/> -->
+      <origin xyz="0.022 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
   </link>
  
@@ -209,9 +213,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Thumb_Dist.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Thumb_Dist.dae"/> -->
+        <box size="0.025 0.01 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 3.14 0"/>
+ <!--      <origin xyz="0.0 0.0 0.0" rpy="3.14 3.14 0"/> -->
+      <origin xyz="0.015 0.0 0.0" rpy="3.14 3.14 0"/>
     </collision>
   </link>
 
@@ -264,9 +270,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/> -->
+         <box size="0.01 0.04 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
+      <origin xyz="0.02 0.0 0.0" rpy="0 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/> -->
     </collision>
   </link>
   
@@ -292,9 +300,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/> -->
+        <box size="0.01 0.025 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/> -->
+      <origin xyz="0.0125 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
   </link>
 
@@ -320,9 +330,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/> -->
+        <box size="0.01 0.01 0.02" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/> -->
+      <origin xyz="0.015 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
   </link>
 
@@ -376,9 +388,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
+     <!--    <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/> -->    
+       <box size="0.01 0.04 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/> -->
+      <origin xyz="0.02 0.0 0.0" rpy="0 0 1.57"/>
     </collision>
   </link>
 
@@ -402,11 +416,13 @@
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
     </visual>
-    <collision>
+   <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/> -->
+        <box size="0.01 0.025 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/> -->
+      <origin xyz="0.0125 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
   </link>
   
@@ -430,11 +446,13 @@
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
     </visual>
-    <collision>
+   <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/> -->
+        <box size="0.01 0.01 0.02" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/> -->
+      <origin xyz="0.015 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
   </link>
   
@@ -464,9 +482,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/> -->
+         <box size="0.01 0.04 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
+      <origin xyz="0.02 0.0 0.0" rpy="0 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/> -->
     </collision>
   </link>
 
@@ -492,9 +512,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/> -->
+        <box size="0.01 0.025 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/> -->
+      <origin xyz="0.0125 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
   </link>
 
@@ -520,9 +542,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/> -->
+        <box size="0.01 0.01 0.02" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/> -->
+      <origin xyz="0.015 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
   </link>
 
@@ -552,9 +576,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Proximal.dae"/> -->
+         <box size="0.01 0.04 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/>
+      <origin xyz="0.02 0.0 0.0" rpy="0 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 0 1.57"/> -->
     </collision>
   </link>
 
@@ -578,11 +604,13 @@
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
     </visual>
-    <collision>
+   <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Mid.dae"/> -->
+        <box size="0.01 0.025 0.01" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="3.14 0 1.57"/> -->
+      <origin xyz="0.0125 0.0 0.0" rpy="3.14 0 1.57"/>
     </collision>
   </link>
 
@@ -608,9 +636,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/>
+<!--         <mesh filename="package://r2_description/meshes/Finger_Dist.dae"/> -->
+        <box size="0.01 0.01 0.02" />
       </geometry>
-      <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/>
+<!--       <origin xyz="0.0 0.0 0.0" rpy="0 -1.57 0"/> -->
+      <origin xyz="0.015 0.0 0.0" rpy="0 -1.57 0"/>
     </collision>
   </link>
 
