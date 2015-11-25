@@ -185,9 +185,20 @@ private:
 
   void goalCB(GoalHandle gh)
   {
+
     // Ensures that the joints in the goal match the joints we are commanding.
     if (!setsEqual(joint_names_, gh.getGoal()->trajectory.joint_names))
     {
+
+
+      std::cout << "gh.getGoal()->trajectory.joint_names:" << std::endl;
+      for(size_t idx=0; idx<gh.getGoal()->trajectory.joint_names.size(); idx++) {
+        std::cout << gh.getGoal()->trajectory.joint_names[idx] << std::endl;
+      }
+
+      
+
+
       ROS_ERROR("Joints on incoming goal don't match our joints");
       gh.setRejected();
       return;
