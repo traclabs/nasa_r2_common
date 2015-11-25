@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(nasa_r2_common_msgs)
 
-find_package(catkin REQUIRED COMPONENTS message_generation nasa_cmake std_msgs visualization_msgs geometry_msgs trajectory_msgs rospy)
+find_package(catkin REQUIRED COMPONENTS message_generation std_msgs visualization_msgs geometry_msgs trajectory_msgs rospy)
 
 catkin_destinations()
 

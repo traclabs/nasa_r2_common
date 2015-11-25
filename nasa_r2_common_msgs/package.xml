@@ -13,7 +13,6 @@
   <author>Jennifer Turner</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>nasa_cmake</build_depend>
   <build_depend>message_generation</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>visualization_msgs</build_depend>
