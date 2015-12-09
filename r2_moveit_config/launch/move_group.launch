@@ -18,7 +18,11 @@
   <arg name="max_safe_path_cost" default="1"/>
   <arg name="jiggle_fraction" default="0.05" />
   <arg name="publish_monitored_planning_scene" default="true"/>
-
+  
+  <group ns="move_group">
+    <rosparam command="load" file="$(find r2_moveit_config/config/kinematics.yaml"/>
+  </group>
+  
   <!-- Planning Functionality -->
   <include ns="move_group" file="$(find r2_moveit_config)/launch/planning_pipeline.launch.xml">
     <arg name="pipeline" value="ompl" />
