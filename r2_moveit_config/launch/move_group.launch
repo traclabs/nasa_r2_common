@@ -20,7 +20,7 @@
   <arg name="publish_monitored_planning_scene" default="true"/>
   
   <group ns="move_group">
-    <rosparam command="load" file="$(find r2_moveit_config/config/kinematics.yaml"/>
+    <rosparam command="load" file="$(find r2_moveit_config)/config/kinematics.yaml"/>
   </group>
   
   <!-- Planning Functionality -->
