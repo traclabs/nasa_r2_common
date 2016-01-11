@@ -956,7 +956,7 @@
     <child link="taskboard_slot1_switch1"/>
     <origin rpy="0.419 0 0" xyz=".037 .111 0.005"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000000.0" lower="-0.84" upper="0" velocity="1000"/>
+    <limit effort="10000000.0" lower="-0.84" upper="0" velocity="10"/>
   </joint>
 
   <joint name="taskboard_lower/taskboard_slot1_switch2" type="revolute">
@@ -964,7 +964,7 @@
     <child link="taskboard_slot1_switch2_pullout"/>
     <origin rpy=".47 0 0" xyz="-.0635 -.089 0.009"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000000.0" lower="-.94" upper="0" velocity="1000"/>
+    <limit effort="10000000.0" lower="-.94" upper="0" velocity="10"/>
   </joint>
   
   <joint name="taskboard_lower/taskboard_slot1_switch2_pullout" type="prismatic">
@@ -980,7 +980,7 @@
     <child link="taskboard_slot1_switch3_pullout"/>
     <origin rpy=".47 0 0" xyz=".0005 -.089 0.009"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000000.0" lower="-.94" upper="0" velocity="1000"/>
+    <limit effort="10000000.0" lower="-.94" upper="0" velocity="10"/>
   </joint>
   
   <joint name="taskboard_lower/taskboard_slot1_switch3_pullout" type="prismatic">
@@ -996,7 +996,7 @@
     <child link="taskboard_slot1_switch4_pullout"/>
     <origin rpy=".47 0 0" xyz=".0635 -.089 0.009"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000000.0" lower="-.94" upper="0" velocity="1000"/>
+    <limit effort="10000000.0" lower="-.94" upper="0" velocity="10"/>
   </joint>
 
   <joint name="taskboard_lower/taskboard_slot1_switch4_pullout" type="prismatic">
@@ -1012,7 +1012,7 @@
     <child link="taskboard_slot1_switch1_cover"/>
     <origin rpy="0 0 0" xyz="0.037 0.124 0.011"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000000.0" lower="-1.57" upper="0" velocity="1000"/>
+    <limit effort="10000000.0" lower="-1.57" upper="0" velocity="10"/>
   </joint>
   
   <joint name="taskboard_lower/taskboard_slot1_guard" type="fixed">
