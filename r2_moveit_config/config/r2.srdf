@@ -302,6 +302,46 @@
         <joint name="r2/left_arm/hand/thumb/joint2" value="1" />
         <joint name="r2/left_arm/hand/thumb/joint3" value="0.5" />
     </group_state>
+    <group_state name="Right Hand Two Finger Prism" group="right_hand">
+        <joint name="r2/right_arm/hand/index/joint0" value="0.0873" />
+        <joint name="r2/right_arm/hand/index/joint1" value="1" />
+        <joint name="r2/right_arm/hand/index/joint2" value="1" />
+        <joint name="r2/right_arm/hand/index/joint3" value="1" />
+        <joint name="r2/right_arm/hand/little/joint0" value="1" />
+        <joint name="r2/right_arm/hand/little/joint1" value="1" />
+        <joint name="r2/right_arm/hand/little/joint2" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint0" value="0.1396" />
+        <joint name="r2/right_arm/hand/middle/joint1" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint2" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint3" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint0" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint1" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint2" value="1" />
+        <joint name="r2/right_arm/hand/thumb/joint0" value="1.2217" />
+        <joint name="r2/right_arm/hand/thumb/joint1" value="0" />
+        <joint name="r2/right_arm/hand/thumb/joint2" value="1" />
+        <joint name="r2/right_arm/hand/thumb/joint3" value="0.5" />
+    </group_state>
+    <group_state name="Right Hand Tool Trigger Pull" group="right_hand">
+        <joint name="r2/right_arm/hand/index/joint0" value="0.0" />
+        <joint name="r2/right_arm/hand/index/joint1" value="1" />
+        <joint name="r2/right_arm/hand/index/joint2" value="1" />
+        <joint name="r2/right_arm/hand/index/joint3" value="1" />
+        <joint name="r2/right_arm/hand/little/joint0" value="1" />
+        <joint name="r2/right_arm/hand/little/joint1" value="1" />
+        <joint name="r2/right_arm/hand/little/joint2" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint0" value="0" />
+        <joint name="r2/right_arm/hand/middle/joint1" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint2" value="1" />
+        <joint name="r2/right_arm/hand/middle/joint3" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint0" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint1" value="1" />
+        <joint name="r2/right_arm/hand/ring/joint2" value="1" />
+        <joint name="r2/right_arm/hand/thumb/joint0" value="-1.2217" />
+        <joint name="r2/right_arm/hand/thumb/joint1" value="0" />
+        <joint name="r2/right_arm/hand/thumb/joint2" value="1" />
+        <joint name="r2/right_arm/hand/thumb/joint3" value="0.5" />
+    </group_state>
     <group_state name="Waist Ready Pose" group="waist">
         <joint name="r2/waist/joint0" value="3.14" />
     </group_state>
