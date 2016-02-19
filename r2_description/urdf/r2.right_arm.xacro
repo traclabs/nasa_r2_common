@@ -22,7 +22,7 @@
     <origin rpy=" -1.5596 -0.0 -0.26157" xyz=" 0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j0_damping}" friction="${right_arm_j0_friction}"/>
-    <limit effort="100.0" lower="-1.57" upper="1.57" velocity="10"/>
+    <limit effort="100.0" lower="-1.57" upper="1.57" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_shoulder_roll">
@@ -52,7 +52,7 @@
     <origin rpy=" 1.5637 -0.0 -1.570796" xyz=" 0.0 -0.0 0.320929"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j1_damping}" friction="${right_arm_j1_friction}"/>
-    <limit effort="100.0" lower="-1.66" upper=".175" velocity="10"/>
+    <limit effort="100.0" lower="-1.66" upper=".175" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_shoulder_pitch">
@@ -82,7 +82,7 @@
     <origin rpy=" -1.5679 -0.0 0.0" xyz=" 0.0 0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j2_damping}" friction="${right_arm_j2_friction}"/>
-    <limit effort="100.0" lower="0.785" upper="4.89" velocity="10"/>
+    <limit effort="100.0" lower="0.785" upper="4.89" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_upper_arm">
@@ -112,7 +112,7 @@
     <origin rpy=" 1.5684 -0.0 0.0" xyz=" 0.0536067 0.0 0.355219"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j3_damping}" friction="${right_arm_j3_friction}"/>
-    <limit effort="100.0" lower="-2.79" upper="-.087" velocity="10"/>
+    <limit effort="100.0" lower="-2.79" upper="-.087" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_elbow">
@@ -142,7 +142,7 @@
     <origin rpy=" -1.5656 -0.0 0.0" xyz=" -0.0537464 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j4_damping}" friction="${right_arm_j4_friction}"/>
-    <limit effort="100.0" lower="-4.45" upper="1.31" velocity="10"/>
+    <limit effort="100.0" lower="-4.45" upper="1.31" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_lower_arm">
@@ -172,7 +172,7 @@
     <origin rpy=" 1.5329 -0.0 0.0" xyz=" 0.0 0.0 0.3569462"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j5_damping}" friction="${right_arm_j5_friction}"/>
-    <limit effort="100.0" lower="-1.22" upper="1.22" velocity="10"/>
+    <limit effort="100.0" lower="-1.22" upper="1.22" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_wrist_pitch">
@@ -189,7 +189,7 @@
     <origin rpy=" 1.5612 -0.0 1.5923" xyz=" -0.000139607 0.006491247 0.0"/>
     <axis xyz="0 0 1"/>
     <dynamics damping="${right_arm_j6_damping}" friction="${right_arm_j6_friction}"/>
-    <limit effort="100.0" lower="-0.785" upper="0.785" velocity="10"/>
+    <limit effort="100.0" lower="-0.785" upper="0.785" velocity="1"/>
   </joint>
 
   <link name="${robot_name}right_wrist_yaw">
