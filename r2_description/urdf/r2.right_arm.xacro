@@ -37,7 +37,7 @@
       <geometry>
         <mesh filename="package://r2_description/meshes/Right_Shoulder_Upper.dae"/>
       </geometry>
-      <origin rpy="0 0 2.35" xyz="0 0 .0254"/>
+      <origin rpy="0 0 2.25" xyz="0 0 .0254"/>
     </collision> 
     <inertial>
         <origin xyz="0.0089916 -0.00131572  0.10287"/>
