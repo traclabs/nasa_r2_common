@@ -91,6 +91,7 @@
         <joint name="r2/neck/joint0" />
         <joint name="r2/neck/joint1" />
         <joint name="r2/neck/joint2" />
+        <chain base_link="r2/waist_center" tip_link="r2/neck_roll" />
     </group>
     <group name="waist">
         <chain base_link="r2/robot_base" tip_link="r2/body_cover" />
