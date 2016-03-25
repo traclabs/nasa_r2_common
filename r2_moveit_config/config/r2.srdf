@@ -17,7 +17,7 @@
         <joint name="r2/left_arm/joint4"/>
         <joint name="r2/left_arm/joint5"/>
         <joint name="r2/left_arm/joint6"/>
-        <chain base_link="r2/chest_center" tip_link="r2/left_palm" />
+        <chain base_link="r2/robot_base" tip_link="r2/left_palm" />
     </group>
     <group name="right_arm">
         <joint name="r2/right_arm/joint0"/>
@@ -27,7 +27,7 @@
         <joint name="r2/right_arm/joint4"/>
         <joint name="r2/right_arm/joint5"/>
         <joint name="r2/right_arm/joint6"/>
-        <chain base_link="r2/chest_center" tip_link="r2/right_palm" />
+        <chain base_link="r2/robot_base" tip_link="r2/right_palm" />
     </group>
     <group name="left_hand">
         <link name="r2/left_palm" />
