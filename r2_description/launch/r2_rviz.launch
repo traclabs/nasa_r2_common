@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="robot"     default="true" />
+  <arg name="debug"     default="false" />
+    
+  <!-- load robot -->
+  <group if="$(arg robot)">
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find r2_description)/robots/r2.urdf.xacro'" />
+  </group>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" respawn="false" output="screen">
+     <rosparam param="source_list">["joint_command"]</rosparam>
+     <rosparam param="use_gui">false</rosparam>
+  </node>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+
+  <!-- remap js -->
+  <node name="js_remap" pkg="topic_tools" type="relay" respawn="true" output="screen" args="/r2/joint_states /joint_states"/>
+
+  <!-- moveit server -->
+<!--   <node pkg="tf" type="static_transform_publisher" name="moveit_odom_broadcaster" args="0 0 0 0 0 0 reference_frame world 100" />
+  <include file="$(find r2_moveit_config)/launch/start_moveit_server.launch" if="$(arg moveit)"/>
+ -->
+</launch>
+
+
