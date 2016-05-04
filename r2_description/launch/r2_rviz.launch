@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
+
   <arg name="robot"     default="true" />
   <arg name="debug"     default="false" />
   <arg name="robot_description" default="robot_description"/>
@@ -14,7 +15,6 @@
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" respawn="false" output="screen">
      <rosparam param="source_list">["/r2/head/joint_command","/r2/left_arm/joint_command","/r2/left_hand/joint_command","/r2/right_arm/joint_command","/r2/right_hand/joint_command","/r2/waist/joint_command"]</rosparam>
      <rosparam param="use_gui">false</rosparam>
-     <rosparam param="semantic_robot_description">$(arg robot_description)_semantic</rosparam>
   </node>
 
   <!-- convert joint states to TF transforms for rviz, etc -->
@@ -23,10 +23,6 @@
   <!-- remap js -->
   <node name="js_remap" pkg="topic_tools" type="relay" respawn="true" output="screen" args="/r2/joint_states /joint_states"/>
 
-  <!-- moveit server -->
-<!--   <node pkg="tf" type="static_transform_publisher" name="moveit_odom_broadcaster" args="0 0 0 0 0 0 reference_frame world 100" />
-  <include file="$(find r2_moveit_config)/launch/start_moveit_server.launch" if="$(arg moveit)"/>
- -->
 </launch>
 
 
