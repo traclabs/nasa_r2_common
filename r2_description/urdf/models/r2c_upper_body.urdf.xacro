@@ -1,15 +1,12 @@
 <?xml version="1.0" ?>
 
-<robot name="r2c_upper_body" xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
-                             xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
-                             xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
-                             xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+<robot name="r2c_upper_body" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <property name="robot_name" value= "/r2/" />
+  <xacro:property name="robot_name" value= "/r2/" />
 
   <link name="world"/>
 
-  <non_visual_link name="${robot_name}robot_world"/>
+  <xacro:non_visual_link name="${robot_name}robot_world"/>
 
   <joint name="${robot_name}fixed/world/robot_world" type="fixed">
     <parent link="world"/>
@@ -17,7 +14,7 @@
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 1.0"/>
   </joint>
 
-  <non_visual_link name="${robot_name}robot_base"/>
+  <xacro:non_visual_link name="${robot_name}robot_base"/>
 
   <joint name="${robot_name}fixed/robot_world/robot_base" type="fixed">
     <parent link="${robot_name}robot_world"/>

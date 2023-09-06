@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.16)
 project(nasa_r2_common_msgs)
 
 find_package(catkin REQUIRED COMPONENTS message_generation message_runtime std_msgs visualization_msgs geometry_msgs trajectory_msgs)
